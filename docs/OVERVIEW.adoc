@@ -1,0 +1,194 @@
+ifdef::lang[include::attributes-{lang}.adoc[]]
+:title-separator: {sp}| 
+= TradeDocs | Overview
+
+
+TradeDocs is a human-readable standards-based document format for authoring shipping and freight documents that can accept raw EDI messages and generate a document based on that message. `TradeDocs` uses `AsciiDoc` as its cannonical file format, enabling conversion of the files into different consumable formats 
+
+.TradeDocs Documentation Guide Style
+=== Document Styles
+The Style Guide for this guide is as follows:
+
+
+
+* follows Asciidoc
+* a ``double quoted'', `single quoted'.
+* normal, ^super^, ~sub~.
+* `passthru *bold*`
+
+==== Configuration Format
+
+TradeDocs utilizes link:https://raw.githubusercontent.com/freight-trust/toml/master/examples/example-v0.4.0.toml[TOML v0.4.0] specifications to define formats. You can find the link:https://raw.githubusercontent.com/freight-trust/toml/master/examples/example-v0.4.0.toml[cannonical toml format here.]
+
+
+==== Rationale for TOML
+
+
+* Code listings:
++
+[source,toml]
+-----------------
+
+[a.b.c]
+d = 'Hello'
+e = 'World'
+-----------------
+
+becomes
+
+* Code listings:
++
+[source,toml]
+-----------------
+  {
+    "a": { 
+      "b": {
+        "c": { 
+          "d": "Hello"
+          "e": "World"
+        }
+      }
+    }
+  }
+ 
+-----------------
+
+To learn more, visit the AsciiDoc home page at
+http://www.methods.co.nz/asciidoc/[^].
+
+.Strictly enforced
+== Dogma
+
+File Styles
+^^^^^^^^^^^
+* Byte Order Mark `U+FEFF BYTE ORDER MARK` 
+* `⍽` is not to be used
+
+
+The use of a BOM will interfere with any protocol or file format that expects specific ASCII characters at the beginning, such as the use of "#!" of at the beginning of Unix shell scripts.
+
+=== Maidenlane Parser
+
+The *Maidenlane* parser  performs critical security validity checks against the raw `EDI` messages in a `ASCII` stream. When dealing with `UTF-8` encoded form of its input, it `does not` interpret certain illegal octet sequences as characters.  For example, a parser might prohibit the `NUL` character when encoded as the single-octet sequence `00`, but erroneously allow the illegal two-octet sequence `C0 80` and interpret it as a `NUL` character. 
+
+.Web Server Exploit
+==== Example Parser Exploit
+An example might be a parser which prohibits the octet sequence `2F 2E 2E 2F ("/../")`, yet permits the illegal octet sequence `2F C0 AE 2E 2F`. link:https://tools.ietf.org/html/rfc3629#section-6[^source^]
+
+
+=== Coding Ruleset
+
+Type Structure Theorem 
+
+Types increase your agility when doing refactoring. It's better for the compiler to catch errors than to have things fail at runtime.
+Types are one of the best forms of documentation you can have. The function signature is a theorem and the function body is the proof.
+
+link:https://github.com/DefinitelyTyped/DefinitelyTyped[see: Definitely Typed GitHub for an overview]
+
+==== Null vs. Undefined
+
+
+* Null vs. Undefined [[null]]
++
+.Not Conforming
+[source,javascript]
+--------------------
+
+
+let foo = {x:123,y:undefined};
+--------------------
+
++
+.Conforming
+[source,javascript]
+--------------------
+let foo:{x:number,y?:number} = {x:123};
+--------------------
+
+
+==== Variable and Function Names
+
+Use `camelCase` for variable and function names
+
+* Variable [[Variable]]
++
+.Not Conforming
+[source,javascript]
+--------------------
+var FooVar;
+function BarFunc() { }
+--------------------
+
+
++
+.Conforming
+[source,typescript]
+--------------------
+var fooVar;
+function barFunc() { }
+--------------------
+
+
+====  Class Names
+
+Use `PascalCase` for class names.
+
+
+* Class Name [[classname]]
++
+.Not Conforming
+[source,javascript]
+--------------------
+class foo { }
+--------------------
+
+
++
+.Not Conforming
+[source,typescript]
+--------------------
+class Foo { }
+--------------------
+
+* Members and Methods
++ 
+Use `camelCase` of class members and methods
+This naturally follows from variable and function naming convention
++
+.Not Conforming
+[source,javascript]
+--------------------
+class foo { }
+--------------------
+
+
++
+.Conforming
+[source,typescript]
+--------------------
+class Foo { }
+--------------------
+
+
+
+Misc
+^^^^
+
+* Code listings:
++
+[source,ruby]
+-----------------
+^tdoc-(ue1|uw1|uw2|ew1|ec1|an1|an2|as1|as2|se1)-([1-2]{1})([a-c]{1})-(d|t|s|p)-([a-z0-9\-]+)$
+-----------------
+
+=== Directory Attribute Rules
+
+.Directory Attribute Values
+[options="header"]
+|=======================
+| dir attribute value	 | Unicode Name	 | Description 
+
+| ltr	 | Left-to-Right Embedding	 | Embed a span of left-to-right characters inside right-to-left text. 
+| rtl | Right-to-Left Embedding | Embed a span of right-to-left characters inside left-to-right text. 
+| lro	 | Left-to-Right Override	 | Force the characters to be treated as strong left-to-right characters. 
+| rlo	 | Right-to-Left Override	 | Force the characters to be treated as strong right-to-left characters. 
