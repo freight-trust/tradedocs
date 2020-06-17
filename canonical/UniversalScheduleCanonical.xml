@@ -1,0 +1,208 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.freighttrust.com/schema/universal/2020/06" version="1.1">
+  <xs:include schemaLocation="UniversalCommon.xsd"></xs:include>
+
+  <xs:element name="UniversalSchedule" type="UniversalScheduleData"></xs:element>
+
+  <xs:complexType name="UniversalScheduleData">
+    <xs:all>
+      <xs:element name="Schedule" type="Schedule"></xs:element>
+    </xs:all>
+    <xs:attribute name="version" type="xs:token"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="Schedule">
+    <xs:all>
+      <xs:element minOccurs="0" name="DataContext" type="DataContext"></xs:element>
+
+      <xs:element minOccurs="1" name="DataProvider">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="1" name="IsCancellation" type="xs:boolean"></xs:element>
+      <xs:element minOccurs="0" name="Carrier" type="OrganizationAddress"></xs:element>
+      <xs:element minOccurs="0" name="Transport">
+        <xs:complexType>
+          <xs:all>
+            <xs:element minOccurs="0" name="Air">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element minOccurs="1" name="FlightNumber">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="35"></xs:maxLength>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="IsCargoOnly" type="xs:boolean"></xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+            <xs:element minOccurs="0" name="Rail">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element minOccurs="1" name="Journey">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="35"></xs:maxLength>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="1" name="JourneyNumber">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10"></xs:maxLength>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+            <xs:element minOccurs="0" name="Road">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element minOccurs="1" name="TruckReference">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10"></xs:maxLength>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+            <xs:element minOccurs="0" name="Sea">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element minOccurs="1" name="Vessel">
+                    <xs:complexType>
+                      <xs:all>
+                        <xs:element minOccurs="1" name="VesselName">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="35"></xs:maxLength>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="CallSign">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="10"></xs:maxLength>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                        <xs:element minOccurs="0" name="LloydsNumber">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:maxLength value="7"></xs:maxLength>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:element>
+                      </xs:all>
+                    </xs:complexType>
+                  </xs:element>
+                  <xs:element minOccurs="1" name="VoyageNumber">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10"></xs:maxLength>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="VoyageType" type="CodeDescriptionPair"></xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element minOccurs="0" name="DischargeCollection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Discharge">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element minOccurs="1" name="Port" type="UNLOCO"></xs:element>
+                  <xs:element minOccurs="0" name="ActualArrival" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="ArrivalBerth">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10"></xs:maxLength>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="ArrivalCTO" type="OrganizationAddress"></xs:element>
+                  <xs:element minOccurs="0" name="ArrivalReference">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20"></xs:maxLength>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="EstimatedArrival" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="FCLAvailability" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="FCLStorage" type="emptiable_dateTime"></xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element minOccurs="0" name="LoadingCollection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Loading">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element minOccurs="1" name="Port" type="UNLOCO"></xs:element>
+                  <xs:element minOccurs="0" name="ActualArrival" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="ActualDeparture" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="DepartureBerth">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10"></xs:maxLength>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="DepartureCTO" type="OrganizationAddress"></xs:element>
+                  <xs:element minOccurs="0" name="DepartureReference">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20"></xs:maxLength>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="DocumentCutOff" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="EstimatedArrival" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="EstimatedDeparture" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="FCLCutOff" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="FCLReceivalCommences" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="HazzardCutOffDate" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="HazzardReceivalCommences" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="TerminalCode">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10"></xs:maxLength>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element minOccurs="0" name="TerminalName">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="35"></xs:maxLength>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+
+</xs:schema>
