@@ -1,0 +1,1072 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://www.freighttrust.com/schema/universal/2020/06#",
+    "definitions": {
+        "Country": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Name": {"type": "string"}
+            }
+        },
+        "Company": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Country": {"$ref": "#/definitions/Country"},
+                "Name": {"type": "string"}
+            }
+        },
+        "CodeDescriptionPair": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Description": {"type": "string"}
+            }
+        },
+        "Capability": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Name": {"type": "string"}
+            }
+        },
+        "Group": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Name": {"type": "string"}
+            }
+        },
+        "Staff": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Name": {"type": "string"}
+            }
+        },
+        "Task": {
+            "type": "object",
+            "required": [
+                "Description",
+                "Sequence",
+                "Status",
+                "TaskID",
+                "Type"
+            ],
+            "properties": {
+                "Description": {"type": "string"},
+                "Sequence": {"type": "integer"},
+                "Status": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "TaskID": {"type": "string"},
+                "Type": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "ActualDuration": {"type": "string"},
+                "ActualStartTimeUTC": {"type": "string"},
+                "AssignedCapability": {"$ref": "#/definitions/Capability"},
+                "AssignedGroup": {"$ref": "#/definitions/Group"},
+                "AssignedStaff": {"$ref": "#/definitions/Staff"},
+                "CardNote": {"type": "string"},
+                "CompletedTimeUTC": {"type": "string"},
+                "EstimatedDuration": {"type": "string"},
+                "EstimatedStartTimeUTC": {"type": "string"},
+                "EstimateVariationFactor": {"type": "number"},
+                "TaskNotes": {"type": "string"}
+            }
+        },
+        "DocumentaryOverride": {
+            "type": "object",
+            "properties": {
+                "DataVersion": {"type": "integer"},
+                "DocumentName": {"type": "string"},
+                "IsSystemDefined": {"type": "boolean"},
+                "Purpose": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "SubmissionVersion": {"type": "integer"}
+            }
+        },
+        "ConversationMessage": {
+            "type": "object",
+            "required": [
+                "ParticipantName",
+                "Text"
+            ],
+            "properties": {
+                "ParticipantName": {"type": "string"},
+                "Text": {"type": "string"},
+                "CreatedTime": {"type": "string"},
+                "IsInternal": {"type": "boolean"},
+                "IsSystem": {"type": "boolean"}
+            }
+        },
+        "RegistrationNumberType": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Description": {"type": "string"}
+            }
+        },
+        "UNLOCO": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Name": {"type": "string"}
+            }
+        },
+        "Language": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Description": {"type": "string"}
+            }
+        },
+        "OrganizationLocalAddress": {
+            "type": "object",
+            "properties": {
+                "Address1": {"type": "string"},
+                "Address2": {"type": "string"},
+                "City": {"type": "string"},
+                "CompanyName": {"type": "string"},
+                "Language": {"$ref": "#/definitions/Language"},
+                "Postcode": {"type": "string"},
+                "State": {"type": "string"}
+            }
+        },
+        "OrganizationAddress.LocalAddressCollection": {
+            "type": "object",
+            "properties": {
+                "LocalAddress": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/OrganizationLocalAddress"},
+                    "minItems": 0
+                }
+            }
+        },
+        "RegistrationNumber": {
+            "type": "object",
+            "required": [
+                "Type",
+                "Value"
+            ],
+            "properties": {
+                "Type": {"$ref": "#/definitions/RegistrationNumberType"},
+                "CountryOfIssue": {"$ref": "#/definitions/Country"},
+                "Value": {"type": "string"}
+            }
+        },
+        "OrganizationAddress.RegistrationNumberCollection": {
+            "type": "object",
+            "properties": {
+                "RegistrationNumber": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/RegistrationNumber"},
+                    "minItems": 0
+                }
+            }
+        },
+        "OrganizationAddress": {
+            "type": "object",
+            "required": ["AddressType"],
+            "properties": {
+                "AddressType": {"type": "string"},
+                "AdditionalAddressInformation": {"type": "string"},
+                "Address1": {"type": "string"},
+                "Address2": {"type": "string"},
+                "AddressOverride": {"type": "boolean"},
+                "AddressShortCode": {"type": "string"},
+                "City": {"type": "string"},
+                "CompanyName": {"type": "string"},
+                "Contact": {"type": "string"},
+                "Country": {"$ref": "#/definitions/Country"},
+                "Email": {"type": "string"},
+                "Fax": {"type": "string"},
+                "GovRegNum": {"type": "string"},
+                "GovRegNumType": {"$ref": "#/definitions/RegistrationNumberType"},
+                "IsResidential": {"type": "boolean"},
+                "Mobile": {"type": "string"},
+                "OrganizationCode": {"type": "string"},
+                "Phone": {"type": "string"},
+                "Port": {"$ref": "#/definitions/UNLOCO"},
+                "Postcode": {"type": "string"},
+                "ScreeningStatus": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "State": {"type": "string"},
+                "SuppressAddressValidationError": {"type": "boolean"},
+                "UniversalNettingCode": {"type": "string"},
+                "UniversalOfficeCode": {"type": "string"},
+                "LocalAddressCollection": {"$ref": "#/definitions/OrganizationAddress.LocalAddressCollection"},
+                "RegistrationNumberCollection": {"$ref": "#/definitions/OrganizationAddress.RegistrationNumberCollection"}
+            }
+        },
+        "Department": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Name": {"type": "string"}
+            }
+        },
+        "RatingUnit": {
+            "type": "object",
+            "properties": {
+                "Code": {"type": "string"},
+                "Description": {"type": "string"}
+            }
+        },
+        "Currency": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Description": {"type": "string"}
+            }
+        },
+        "DocumentTrackingAttribute": {
+            "type": "object",
+            "required": ["Type"],
+            "properties": {
+                "Type": {"type": "string"},
+                "Value": {"type": "string"}
+            }
+        },
+        "DocumentTracking.DocumentTrackingAttributeCollection": {
+            "type": "object",
+            "properties": {
+                "DocumentTrackingAttribute": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/DocumentTrackingAttribute"},
+                    "minItems": 0
+                }
+            }
+        },
+        "DocumentTracking": {
+            "type": "object",
+            "required": [
+                "DocumentPeriod",
+                "DocumentType",
+                "DocumentUsage"
+            ],
+            "properties": {
+                "DocumentPeriod": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "DocumentType": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "DocumentUsage": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "Category": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "Country": {"$ref": "#/definitions/Country"},
+                "DocumentNote": {"type": "string"},
+                "DocumentNumber": {"type": "string"},
+                "DocumentOwner": {"$ref": "#/definitions/OrganizationAddress"},
+                "IsDocumentCreditControl": {"type": "boolean"},
+                "IsOriginalDocumentRequired": {"type": "boolean"},
+                "ReceivedDate": {"type": "string"},
+                "ReceivedFromCustomsBroker": {"type": "string"},
+                "ReturnToShipper": {"type": "string"},
+                "SentToCustomsBroker": {"type": "string"},
+                "ValidToDate": {"type": "string"},
+                "DocumentTrackingAttributeCollection": {"$ref": "#/definitions/DocumentTracking.DocumentTrackingAttributeCollection"}
+            }
+        },
+        "ContextType": {
+            "type": "object",
+            "properties": {
+                "Value": {"type": "string"},
+                "Description": {"type": "string"}
+            }
+        },
+        "CustomizedField": {
+            "type": "object",
+            "required": [
+                "DataType",
+                "Key",
+                "Value"
+            ],
+            "properties": {
+                "DataType": {
+                    "allOf": [
+                        {"type": "string"},
+                        {
+                            "enum": [
+                                "String",
+                                "Byte",
+                                "Integer",
+                                "Decimal",
+                                "Boolean",
+                                "DateTime",
+                                "Short",
+                                "DateTimeOffset",
+                                "Geography"
+                            ]
+                        }
+                    ]
+                },
+                "Key": {"type": "string"},
+                "Value": {"type": "string"}
+            }
+        },
+        "ParticipantGroup": {
+            "type": "object",
+            "required": ["Group"],
+            "properties": {
+                "Group": {"$ref": "#/definitions/Group"},
+                "IsActive": {"type": "boolean"},
+                "IsSubscribed": {"type": "boolean"},
+                "Location": {"$ref": "#/definitions/UNLOCO"}
+            }
+        },
+        "Milestone": {
+            "type": "object",
+            "required": [
+                "Description",
+                "EventCode",
+                "Sequence"
+            ],
+            "properties": {
+                "Description": {"type": "string"},
+                "EventCode": {"type": "string"},
+                "Sequence": {"type": "integer"},
+                "ActualDate": {"type": "string"},
+                "ConditionReference": {"type": "string"},
+                "ConditionType": {"type": "string"},
+                "EstimatedDate": {"type": "string"}
+            }
+        },
+        "TaxID": {
+            "type": "object",
+            "required": ["TaxCode"],
+            "properties": {
+                "TaxCode": {"type": "string"},
+                "Description": {"type": "string"},
+                "ExtraTaxRate": {"type": "number"},
+                "ExtraTaxType": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "TaxRate": {"type": "number"},
+                "TaxType": {"$ref": "#/definitions/CodeDescriptionPair"}
+            }
+        },
+        "MatchingCriteria": {
+            "type": "object",
+            "required": [
+                "FieldName",
+                "Value"
+            ],
+            "properties": {
+                "FieldName": {"type": "string"},
+                "Value": {"type": "string"}
+            }
+        },
+        "ImportMetaData.MatchingCriteriaCollection": {
+            "type": "object",
+            "properties": {
+                "MatchingCriteria": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/MatchingCriteria"},
+                    "minItems": 0
+                }
+            }
+        },
+        "ImportMetaData": {
+            "type": "object",
+            "required": ["Instruction"],
+            "properties": {
+                "Instruction": {
+                    "allOf": [
+                        {"type": "string"},
+                        {
+                            "enum": [
+                                "Insert",
+                                "Update",
+                                "UpdateAndInsertIfNotFound",
+                                "Delete"
+                            ]
+                        }
+                    ]
+                },
+                "PostingInstruction": {
+                    "allOf": [
+                        {"type": "string"},
+                        {
+                            "enum": [
+                                "PostCost",
+                                "PostRevenue",
+                                "PostRevenueAndCost"
+                            ]
+                        }
+                    ]
+                },
+                "MatchingCriteriaCollection": {"$ref": "#/definitions/ImportMetaData.MatchingCriteriaCollection"}
+            }
+        },
+        "DataSource": {
+            "type": "object",
+            "required": ["Type"],
+            "properties": {
+                "Type": {"type": "string"},
+                "Key": {"type": "string"}
+            }
+        },
+        "ChargeCode": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Description": {"type": "string"}
+            }
+        },
+        "CodeDescriptionPair5Char": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Description": {"type": "string"}
+            }
+        },
+        "State": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Name": {"type": "string"},
+                "Region": {"type": "string"}
+            }
+        },
+        "NoteContext": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Description": {"type": "string"}
+            }
+        },
+        "Note": {
+            "type": "object",
+            "required": [
+                "Description",
+                "IsCustomDescription",
+                "NoteText"
+            ],
+            "properties": {
+                "Description": {"type": "string"},
+                "IsCustomDescription": {"type": "boolean"},
+                "NoteText": {"type": "string"},
+                "NoteContext": {"$ref": "#/definitions/NoteContext"},
+                "Visibility": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "VisibleCompany": {"$ref": "#/definitions/CodeDescriptionPair"}
+            }
+        },
+        "Branch": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {"type": "string"},
+                "Name": {"type": "string"}
+            }
+        },
+        "EntityReference": {
+            "type": "object",
+            "required": ["Type"],
+            "properties": {
+                "Type": {"type": "string"},
+                "Key": {"type": "string"}
+            }
+        },
+        "PlaceOfSupply": {
+            "type": "object",
+            "properties": {
+                "Location": {"$ref": "#/definitions/CodeDescriptionPair5Char"},
+                "LocationType": {"$ref": "#/definitions/CodeDescriptionPair"}
+            }
+        },
+        "OrganizationReference": {
+            "type": "object",
+            "required": ["Type"],
+            "properties": {
+                "Type": {"type": "string"},
+                "Key": {"type": "string"}
+            }
+        },
+        "RatingBasis": {
+            "type": "object",
+            "required": ["OriginType"],
+            "properties": {
+                "OriginType": {"type": "string"},
+                "Currency": {"$ref": "#/definitions/Currency"},
+                "FlatRate": {"type": "number"},
+                "IsPercentageRate": {"type": "boolean"},
+                "MaximumRate": {"type": "number"},
+                "MinimumRate": {"type": "number"},
+                "OriginAdditionalReference": {"type": "string"},
+                "OriginKey": {"type": "string"},
+                "OriginQuantity": {"type": "number"},
+                "OriginQuantityUnit": {"$ref": "#/definitions/RatingUnit"},
+                "PerUnitRate": {"type": "number"},
+                "RateUnit": {"$ref": "#/definitions/RatingUnit"}
+            }
+        },
+        "ChargeLine.CostRatingBasisCollection": {
+            "type": "object",
+            "properties": {
+                "CostRatingBasis": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/RatingBasis"},
+                    "minItems": 0
+                }
+            }
+        },
+        "ChargeLine.SellRatingBasisCollection": {
+            "type": "object",
+            "properties": {
+                "SellRatingBasis": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/RatingBasis"},
+                    "minItems": 0
+                }
+            }
+        },
+        "ChargeLine": {
+            "type": "object",
+            "properties": {
+                "Branch": {"$ref": "#/definitions/Branch"},
+                "ChargeCode": {"$ref": "#/definitions/ChargeCode"},
+                "ChargeCodeGroup": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "CostAPInvoiceNumber": {"type": "string"},
+                "CostApportionmentConsolNumber": {"$ref": "#/definitions/EntityReference"},
+                "CostDueDate": {"type": "string"},
+                "CostExchangeRate": {"type": "number"},
+                "CostGSTVATID": {"$ref": "#/definitions/TaxID"},
+                "CostInvoiceDate": {"type": "string"},
+                "CostIsPosted": {"type": "boolean"},
+                "CostLocalAmount": {"type": "number"},
+                "CostOSAmount": {"type": "number"},
+                "CostOSCurrency": {"$ref": "#/definitions/Currency"},
+                "CostOSGSTVATAmount": {"type": "number"},
+                "CostPlaceOfSupply": {"$ref": "#/definitions/PlaceOfSupply"},
+                "Creditor": {"$ref": "#/definitions/OrganizationReference"},
+                "Debtor": {"$ref": "#/definitions/OrganizationReference"},
+                "Department": {"$ref": "#/definitions/Department"},
+                "Description": {"type": "string"},
+                "DisplaySequence": {"type": "integer"},
+                "ExternalCreditorCode": {"type": "string"},
+                "ExternalDebtorCode": {"type": "string"},
+                "GovernmentReportingCostChargeCode": {"type": "string"},
+                "GovernmentReportingSellChargeCode": {"type": "string"},
+                "ImportMetaData": {"$ref": "#/definitions/ImportMetaData"},
+                "SellExchangeRate": {"type": "number"},
+                "SellGSTVATID": {"$ref": "#/definitions/TaxID"},
+                "SellInvoiceType": {"type": "string"},
+                "SellIsPosted": {"type": "boolean"},
+                "SellLocalAmount": {"type": "number"},
+                "SellOSAmount": {"type": "number"},
+                "SellOSCurrency": {"$ref": "#/definitions/Currency"},
+                "SellOSGSTVATAmount": {"type": "number"},
+                "SellPlaceOfSupply": {"$ref": "#/definitions/PlaceOfSupply"},
+                "SellPostedTransactionNumber": {"type": "string"},
+                "SellPostedTransactionType": {"type": "string"},
+                "SellReference": {"type": "string"},
+                "SupplierReference": {"type": "string"},
+                "CostRatingBasisCollection": {"$ref": "#/definitions/ChargeLine.CostRatingBasisCollection"},
+                "SellRatingBasisCollection": {"$ref": "#/definitions/ChargeLine.SellRatingBasisCollection"}
+            }
+        },
+        "ParticipantStaff": {
+            "type": "object",
+            "required": ["Staff"],
+            "properties": {
+                "Staff": {"$ref": "#/definitions/Staff"},
+                "IsActive": {"type": "boolean"},
+                "IsSubscribed": {"type": "boolean"},
+                "JobTitle": {"type": "string"},
+                "Location": {"$ref": "#/definitions/UNLOCO"}
+            }
+        },
+        "OriginalReference": {
+            "type": "object",
+            "properties": {
+                "OriginalTransactionComplianceSubType": {"type": "string"},
+                "OriginalTransactionDate": {"type": "string"},
+                "OriginalTransactionJobInvoiceNumber": {"type": "string"},
+                "OriginalTransactionNumber": {"type": "string"},
+                "OriginalTransactionReference": {"type": "string"}
+            }
+        },
+        "JobCosting.ChargeLineCollection": {
+            "type": "object",
+            "properties": {
+                "ChargeLine": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/ChargeLine"},
+                    "minItems": 0
+                }
+            }
+        },
+        "JobCosting": {
+            "type": "object",
+            "properties": {
+                "AccrualNotRecognized": {"type": "number"},
+                "AccrualRecognized": {"type": "number"},
+                "AgentRevenue": {"type": "number"},
+                "Branch": {"$ref": "#/definitions/Branch"},
+                "Currency": {"$ref": "#/definitions/Currency"},
+                "Department": {"$ref": "#/definitions/Department"},
+                "HomeBranch": {"$ref": "#/definitions/Branch"},
+                "LocalClientRevenue": {"type": "number"},
+                "OperationsStaff": {"$ref": "#/definitions/Staff"},
+                "OtherDebtorRevenue": {"type": "number"},
+                "SalesStaff": {"$ref": "#/definitions/Staff"},
+                "TotalAccrual": {"type": "number"},
+                "TotalCost": {"type": "number"},
+                "TotalJobProfit": {"type": "number"},
+                "TotalRevenue": {"type": "number"},
+                "TotalWIP": {"type": "number"},
+                "WIPNotRecognized": {"type": "number"},
+                "WIPRecognized": {"type": "number"},
+                "ChargeLineCollection": {"$ref": "#/definitions/JobCosting.ChargeLineCollection"}
+            }
+        },
+        "StaffUsingAttributes": {
+            "type": "object",
+            "properties": {
+                "Value": {"type": "string"},
+                "Name": {"type": "string"}
+            }
+        },
+        "Conversation.ConversationMessageCollection": {
+            "type": "object",
+            "properties": {
+                "ConversationMessage": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/ConversationMessage"},
+                    "minItems": 0
+                }
+            }
+        },
+        "Conversation.ParticipantGroupCollection": {
+            "type": "object",
+            "properties": {
+                "ParticipantGroup": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/ParticipantGroup"},
+                    "minItems": 0
+                }
+            }
+        },
+        "ParticipantRelatedParty": {
+            "type": "object",
+            "required": [
+                "Party",
+                "RelatedPartyType"
+            ],
+            "properties": {
+                "Party": {"$ref": "#/definitions/OrganizationAddress"},
+                "RelatedPartyType": {
+                    "allOf": [
+                        {"type": "string"},
+                        {
+                            "enum": [
+                                "Contact",
+                                "Organization",
+                                "Email"
+                            ]
+                        }
+                    ]
+                },
+                "IsActive": {"type": "boolean"},
+                "IsSubscribed": {"type": "boolean"},
+                "Location": {"$ref": "#/definitions/UNLOCO"},
+                "Relation": {"type": "string"}
+            }
+        },
+        "Conversation.ParticipantRelatedPartyCollection": {
+            "type": "object",
+            "properties": {
+                "ParticipantRelatedParty": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/ParticipantRelatedParty"},
+                    "minItems": 0
+                }
+            }
+        },
+        "Conversation.ParticipantStaffCollection": {
+            "type": "object",
+            "properties": {
+                "ParticipantStaff": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/ParticipantStaff"},
+                    "minItems": 0
+                }
+            }
+        },
+        "Conversation": {
+            "type": "object",
+            "properties": {
+                "ConversationMessageCollection": {"$ref": "#/definitions/Conversation.ConversationMessageCollection"},
+                "ParticipantGroupCollection": {"$ref": "#/definitions/Conversation.ParticipantGroupCollection"},
+                "ParticipantRelatedPartyCollection": {"$ref": "#/definitions/Conversation.ParticipantRelatedPartyCollection"},
+                "ParticipantStaffCollection": {"$ref": "#/definitions/Conversation.ParticipantStaffCollection"}
+            }
+        },
+        "ValueTypePair": {
+            "type": "object",
+            "required": [
+                "Type",
+                "Value"
+            ],
+            "properties": {
+                "Type": {"type": "string"},
+                "Value": {"type": "string"}
+            }
+        },
+        "DataContext.DataSourceCollection": {
+            "type": "object",
+            "properties": {
+                "DataSource": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/DataSource"},
+                    "minItems": 0
+                }
+            }
+        },
+        "DataTarget": {
+            "type": "object",
+            "required": ["Type"],
+            "properties": {
+                "Type": {"type": "string"},
+                "Key": {"type": "string"},
+                "Owner": {"$ref": "#/definitions/OrganizationAddress"}
+            }
+        },
+        "DataContext.DataTargetCollection": {
+            "type": "object",
+            "properties": {
+                "DataTarget": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/DataTarget"},
+                    "minItems": 0
+                }
+            }
+        },
+        "RecipientRole": {
+            "type": "object",
+            "required": ["Code"],
+            "properties": {
+                "Code": {
+                    "allOf": [
+                        {"type": "string"},
+                        {
+                            "enum": [
+                                "AAD",
+                                "ACF",
+                                "ACR",
+                                "ACT",
+                                "ACY",
+                                "AFR",
+                                "ARP",
+                                "ASY",
+                                "BCO",
+                                "BKP",
+                                "BRO",
+                                "BRI",
+                                "BRE",
+                                "BTP",
+                                "CAP",
+                                "CAR",
+                                "CBA",
+                                "CCA",
+                                "CD4",
+                                "CLI",
+                                "CNE",
+                                "CNR",
+                                "COA",
+                                "CTA",
+                                "CTG",
+                                "CTO",
+                                "CTP",
+                                "CYD",
+                                "DAG",
+                                "DCA",
+                                "DCF",
+                                "DCR",
+                                "DCT",
+                                "DCY",
+                                "DTP",
+                                "FOR",
+                                "GRP",
+                                "HCA",
+                                "HSA",
+                                "ICE",
+                                "IDB",
+                                "JWG",
+                                "LCT",
+                                "NFP",
+                                "NGP",
+                                "ORP",
+                                "PAG",
+                                "PCA",
+                                "PEM",
+                                "PER",
+                                "PIM",
+                                "PIR",
+                                "PRC",
+                                "PUP",
+                                "RAG",
+                                "SAG",
+                                "SGA",
+                                "SPM",
+                                "SRP",
+                                "STF",
+                                "TPC",
+                                "DTW",
+                                "ATW",
+                                "UAM",
+                                "WAR",
+                                "WIN",
+                                "BWI",
+                                "BWR",
+                                "WHS",
+                                "WNS",
+                                "YER",
+                                "YIA"
+                            ]
+                        }
+                    ]
+                },
+                "Description": {"type": "string"},
+                "ServiceCode": {
+                    "allOf": [
+                        {"type": "string"},
+                        {
+                            "enum": [
+                                "AMD",
+                                "BRQ",
+                                "HLD",
+                                "SIN",
+                                "TWD",
+                                "TWR",
+                                "VGM"
+                            ]
+                        }
+                    ]
+                },
+                "ServiceDescription": {"type": "string"}
+            }
+        },
+        "DataContext.RecipientRoleCollection": {
+            "type": "object",
+            "properties": {
+                "RecipientRole": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/RecipientRole"},
+                    "minItems": 0
+                }
+            }
+        },
+        "DataContext": {
+            "type": "object",
+            "properties": {
+                "DataSourceCollection": {"$ref": "#/definitions/DataContext.DataSourceCollection"},
+                "ActionPurpose": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "CodesMappedToTarget": {"type": "boolean"},
+                "Company": {"$ref": "#/definitions/Company"},
+                "DataProvider": {"type": "string"},
+                "DocumentaryOverride": {"$ref": "#/definitions/DocumentaryOverride"},
+                "EnterpriseID": {"type": "string"},
+                "EventBranch": {"$ref": "#/definitions/Branch"},
+                "EventDepartment": {"$ref": "#/definitions/Department"},
+                "EventReference": {"type": "string"},
+                "EventType": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "EventUser": {"$ref": "#/definitions/Staff"},
+                "ServerID": {"type": "string"},
+                "TriggerCount": {"type": "integer"},
+                "TriggerDate": {"type": "string"},
+                "TriggerDescription": {"type": "string"},
+                "TriggerReference": {"type": "string"},
+                "TriggerType": {
+                    "allOf": [
+                        {"type": "string"},
+                        {
+                            "enum": [
+                                "Trigger",
+                                "Milestone",
+                                "Exception",
+                                "Manual"
+                            ]
+                        }
+                    ]
+                },
+                "DataTargetCollection": {"$ref": "#/definitions/DataContext.DataTargetCollection"},
+                "RecipientRoleCollection": {"$ref": "#/definitions/DataContext.RecipientRoleCollection"}
+            }
+        },
+        "Context.SubContextCollection": {
+            "type": "object",
+            "properties": {
+                "SubContext": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/Context"},
+                    "minItems": 0
+                }
+            }
+        },
+        "Context": {
+            "type": "object",
+            "required": [
+                "Type",
+                "Value"
+            ],
+            "properties": {
+                "Type": {"$ref": "#/definitions/ContextType"},
+                "Value": {"type": "string"},
+                "SubContextCollection": {"$ref": "#/definitions/Context.SubContextCollection"}
+            }
+        },
+        "AttachedDocument.ContextCollection": {
+            "type": "object",
+            "properties": {
+                "Context": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/Context"},
+                    "minItems": 0
+                }
+            }
+        },
+        "AttachedDocument": {
+            "type": "object",
+            "required": [
+                "FileName",
+                "ImageData",
+                "Type"
+            ],
+            "properties": {
+                "FileName": {"type": "string"},
+                "ImageData": {
+                    "type": "array",
+                    "items": {"type": "integer"}
+                },
+                "Type": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "IsPublished": {"type": "boolean"},
+                "SaveDateUTC": {"type": "string"},
+                "SavedBy": {"$ref": "#/definitions/Staff"},
+                "Source": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "VisibleBranchCode": {"type": "string"},
+                "VisibleCompanyCode": {"type": "string"},
+                "VisibleDepartmentCode": {"type": "string"},
+                "ContextCollection": {"$ref": "#/definitions/AttachedDocument.ContextCollection"}
+            }
+        },
+        "SettlementMethod": {
+            "type": "object",
+            "properties": {
+                "AuthorizationExpiryDate": {"type": "string"},
+                "AuthorizationReference": {"type": "string"},
+                "Method": {"$ref": "#/definitions/CodeDescriptionPair"}
+            }
+        },
+        "InvoiceRemittance": {
+            "type": "object",
+            "properties": {
+                "BillerAccountNumber": {"type": "string"},
+                "BillerCode": {"type": "string"},
+                "DebtorClientNumber": {"type": "string"},
+                "InvoiceRemittanceReference": {"type": "string"},
+                "InvoiceTransactionReference": {"type": "string"},
+                "Message": {"type": "string"},
+                "Type": {"$ref": "#/definitions/CodeDescriptionPair"}
+            }
+        },
+        "BankAccount": {
+            "type": "object",
+            "properties": {
+                "AccountName": {"type": "string"},
+                "AccountNumber": {"type": "string"},
+                "AccountType": {
+                    "allOf": [
+                        {"type": "string"},
+                        {
+                            "enum": [
+                                "Credit",
+                                "Debit"
+                            ]
+                        }
+                    ]
+                },
+                "AutoDDRFormat": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "BankBranch": {"type": "string"},
+                "BankBranchName": {"type": "string"},
+                "BankName": {"type": "string"},
+                "BankSwift": {"type": "string"},
+                "Country": {"$ref": "#/definitions/Country"},
+                "Currency": {"type": "string"},
+                "EFTUserId": {"type": "string"},
+                "IBANNumber": {"type": "string"},
+                "IsDefaultAccount": {"type": "boolean"},
+                "Method": {"type": "string"}
+            }
+        },
+        "TaskSet.TaskCollection": {
+            "type": "object",
+            "properties": {
+                "Task": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/Task"},
+                    "minItems": 0
+                }
+            }
+        },
+        "TaskSet.TaskSetCollection": {
+            "type": "object",
+            "properties": {
+                "TaskSet": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/TaskSet"},
+                    "minItems": 0
+                }
+            }
+        },
+        "TaskSet": {
+            "type": "object",
+            "required": [
+                "Description",
+                "Type"
+            ],
+            "properties": {
+                "Description": {"type": "string"},
+                "Type": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "AgreedDeliveryDateUTC": {"type": "string"},
+                "CurrentStatus": {"type": "string"},
+                "DateAcceptability": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "EarliestStartDateUTC": {"type": "string"},
+                "IsActive": {"type": "boolean"},
+                "Notes": {"type": "string"},
+                "ReleaseGroup": {"$ref": "#/definitions/Group"},
+                "TaskSetStatus": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "TaskCollection": {"$ref": "#/definitions/TaskSet.TaskCollection"},
+                "TaskSetCollection": {"$ref": "#/definitions/TaskSet.TaskSetCollection"}
+            }
+        },
+        "TaxMessageID": {
+            "type": "object",
+            "required": ["TaxMessageCode"],
+            "properties": {
+                "TaxMessageCode": {"type": "string"},
+                "Description": {"type": "string"},
+                "EnglishTaxMessage": {"type": "string"},
+                "TaxGroupCode": {"$ref": "#/definitions/CodeDescriptionPair"},
+                "VATGSTExemptionDocumentType": {"$ref": "#/definitions/CodeDescriptionPair"}
+            }
+        },
+        "CollectionContent": {
+            "allOf": [
+                {"type": "string"},
+                {
+                    "enum": [
+                        "Complete",
+                        "Partial"
+                    ]
+                }
+            ]
+        }
+    }
+}

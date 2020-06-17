@@ -1,0 +1,525 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.freighttrust.com/schema/universal/2020/06" version="1.1">
+  <xs:include schemaLocation="UniversalCommon.xsd"></xs:include>
+  <xs:include schemaLocation="UniversalShipment.xsd"></xs:include>
+
+  <xs:element name="UniversalTransaction" type="UniversalTransactionData"></xs:element>
+
+  <xs:complexType name="UniversalTransactionData">
+    <xs:all>
+      <xs:element name="TransactionInfo" type="TransactionInfo"></xs:element>
+    </xs:all>
+    <xs:attribute name="version" type="xs:token"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="TransactionInfo">
+    <xs:all>
+      <xs:element minOccurs="0" name="DataContext" type="DataContext"></xs:element>
+
+      <xs:element minOccurs="0" name="AgreedPaymentMethod">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="APAccountGroup" type="CodeDescriptionPair"></xs:element>
+      <xs:element minOccurs="0" name="ARAccountGroup" type="CodeDescriptionPair"></xs:element>
+      <xs:element minOccurs="0" name="BankAccount">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="Branch" type="Branch"></xs:element>
+      <xs:element minOccurs="0" name="BranchAddress" type="OrganizationAddress"></xs:element>
+      <xs:element minOccurs="0" name="Category">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="CheckDrawer">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="50"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="CheckNumberOrPaymentRef">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="38"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="ComplianceSubType">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="CreateTime" type="emptiable_dateTime"></xs:element>
+      <xs:element minOccurs="0" name="CreateUser" type="StaffUsingAttributes"></xs:element>
+      <xs:element minOccurs="0" name="DateClearedInCashBook" type="emptiable_dateTime"></xs:element>
+      <xs:element minOccurs="0" name="Department" type="Department"></xs:element>
+      <xs:element minOccurs="0" name="Description">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="128"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="DigitalSignature">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="200"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="DrawerBank">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="25"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="DrawerBranch">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="25"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="DueDate" type="emptiable_dateTime"></xs:element>
+      <xs:element minOccurs="0" name="ExchangeRate" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="ExternalCreditorCode">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="25"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="ExternalDebtorCode">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="25"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="FullyPaidDate" type="emptiable_dateTime"></xs:element>
+      <xs:element minOccurs="0" name="InvoiceTerm">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="COD"></xs:enumeration>
+            <xs:enumeration value="INV"></xs:enumeration>
+            <xs:enumeration value="MTH"></xs:enumeration>
+            <xs:enumeration value="PER"></xs:enumeration>
+            <xs:enumeration value="SHP"></xs:enumeration>
+            <xs:enumeration value="MIC"></xs:enumeration>
+            <xs:enumeration value="PIA"></xs:enumeration>
+            <xs:enumeration value="DPC"></xs:enumeration>
+            <xs:enumeration value="CUS"></xs:enumeration>
+            <xs:enumeration value="EWK"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="InvoiceTermDays" type="xs:int"></xs:element>
+      <xs:element minOccurs="0" name="IsCancelled" type="xs:boolean"></xs:element>
+      <xs:element minOccurs="0" name="IsCreatedByMatchingProcess" type="xs:boolean"></xs:element>
+      <xs:element minOccurs="0" name="IsPrinted" type="xs:boolean"></xs:element>
+      <xs:element minOccurs="0" name="Job" type="EntityReference"></xs:element>
+      <xs:element minOccurs="0" name="JobInvoiceNumber">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="38"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="LastEditTime" type="emptiable_dateTime"></xs:element>
+      <xs:element minOccurs="0" name="LastEditUser" type="StaffUsingAttributes"></xs:element>
+      <xs:element minOccurs="0" name="Ledger">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="2"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="LocalCurrency" type="Currency"></xs:element>
+      <xs:element minOccurs="0" name="LocalExVATAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="LocalTotal" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="LocalVATAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="LocalWHTAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="Number">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="38"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="NumberOfSupportingDocuments" type="xs:int"></xs:element>
+      <xs:element minOccurs="0" name="OrderCollectionDate" type="emptiable_dateTime"></xs:element>
+      <xs:element minOccurs="0" name="OrganizationAddress" type="OrganizationAddress"></xs:element>
+      <xs:element minOccurs="0" name="OriginalReference" type="OriginalReference"></xs:element>
+      <xs:element minOccurs="0" name="OSCurrency" type="Currency"></xs:element>
+      <xs:element minOccurs="0" name="OSExGSTVATAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="OSGSTVATAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="OSTotal" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="OSWHTAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="OutstandingAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="PaymentOrReceiptType">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="AMF"></xs:enumeration>
+            <xs:enumeration value="BDT"></xs:enumeration>
+            <xs:enumeration value="BDP"></xs:enumeration>
+            <xs:enumeration value="CSH"></xs:enumeration>
+            <xs:enumeration value="CHQ"></xs:enumeration>
+            <xs:enumeration value="CCD"></xs:enumeration>
+            <xs:enumeration value="DCR"></xs:enumeration>
+            <xs:enumeration value="DDR"></xs:enumeration>
+            <xs:enumeration value="DDL"></xs:enumeration>
+            <xs:enumeration value="EFT"></xs:enumeration>
+            <xs:enumeration value="SFT"></xs:enumeration>
+            <xs:enumeration value="CRQ"></xs:enumeration>
+            <xs:enumeration value="ECC"></xs:enumeration>
+            <xs:enumeration value="ENC"></xs:enumeration>
+            <xs:enumeration value="END"></xs:enumeration>
+            <xs:enumeration value="EDF"></xs:enumeration>
+            <xs:enumeration value="INT"></xs:enumeration>
+            <xs:enumeration value="INR"></xs:enumeration>
+            <xs:enumeration value="MSF"></xs:enumeration>
+            <xs:enumeration value="MSR"></xs:enumeration>
+            <xs:enumeration value="NRB"></xs:enumeration>
+            <xs:enumeration value="PPY"></xs:enumeration>
+            <xs:enumeration value="STD"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="PlaceOfIssue">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="50"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="PlaceOfSupply" type="PlaceOfSupply"></xs:element>
+      <xs:element minOccurs="0" name="PostDate" type="emptiable_dateTime"></xs:element>
+      <xs:element minOccurs="0" name="ReceiptOrDirectDebitNumber">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="20"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="RequisitionDate" type="emptiable_dateTime"></xs:element>
+      <xs:element minOccurs="0" name="RequisitionStatus">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="SettlementMethod" type="SettlementMethod"></xs:element>
+      <xs:element minOccurs="0" name="TransactionDate" type="emptiable_dateTime"></xs:element>
+      <xs:element minOccurs="0" name="TransactionReference">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="20"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="TransactionType">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="JNL"></xs:enumeration>
+            <xs:enumeration value="TRF"></xs:enumeration>
+            <xs:enumeration value="CTR"></xs:enumeration>
+            <xs:enumeration value="PAY"></xs:enumeration>
+            <xs:enumeration value="REC"></xs:enumeration>
+            <xs:enumeration value="EXX"></xs:enumeration>
+            <xs:enumeration value="OVP"></xs:enumeration>
+            <xs:enumeration value="DSC"></xs:enumeration>
+            <xs:enumeration value="OPY"></xs:enumeration>
+            <xs:enumeration value="ORC"></xs:enumeration>
+            <xs:enumeration value="DPY"></xs:enumeration>
+            <xs:enumeration value="DRC"></xs:enumeration>
+            <xs:enumeration value="GJL"></xs:enumeration>
+            <xs:enumeration value="RJL"></xs:enumeration>
+            <xs:enumeration value="AJL"></xs:enumeration>
+            <xs:enumeration value="INV"></xs:enumeration>
+            <xs:enumeration value="CRD"></xs:enumeration>
+            <xs:enumeration value="ADJ"></xs:enumeration>
+            <xs:enumeration value="JRJ"></xs:enumeration>
+            <xs:enumeration value="WIP"></xs:enumeration>
+            <xs:enumeration value="ACR"></xs:enumeration>
+            <xs:enumeration value="REV"></xs:enumeration>
+            <xs:enumeration value="CST"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+
+      <xs:element minOccurs="1" name="PostingJournalCollection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="1" name="PostingJournal" type="PostingJournal"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element minOccurs="0" name="AttachedDocumentCollection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="AttachedDocument" type="AttachedDocument"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element minOccurs="0" name="BankAccountCollection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="BankAccount" type="BankAccount"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element minOccurs="0" name="InvoiceRemittanceCollection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="InvoiceRemittance" type="InvoiceRemittance"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element minOccurs="0" name="OrganizationDocumentTrackingCollection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="OrganizationDocumentTracking" type="DocumentTracking"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element minOccurs="0" name="ShipmentCollection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="Shipment" type="Shipment"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="GLAccount">
+    <xs:all>
+      <xs:element minOccurs="1" name="AccountCode">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="AccountType" type="CodeDescriptionPair"></xs:element>
+      <xs:element minOccurs="0" name="ConsolidationAccountCode">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="10"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="DebitCredit">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Debit"></xs:enumeration>
+            <xs:enumeration value="Credit"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="Description">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="35"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="LocalComplianceAccountCode">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="20"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="LocalComplianceAccountDescription">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="80"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="PostingJournal">
+    <xs:all>
+      <xs:element minOccurs="0" name="BatchSequence" type="xs:int"></xs:element>
+      <xs:element minOccurs="0" name="Branch" type="Branch"></xs:element>
+      <xs:element minOccurs="0" name="ChargeCode" type="ChargeCode"></xs:element>
+      <xs:element minOccurs="0" name="ChargeCurrency" type="Currency"></xs:element>
+      <xs:element minOccurs="0" name="ChargeExchangeRate" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="ChargeTotalAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="ChargeTotalExVATAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="ChargeTotalVATAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="CostSource" type="EntityReference"></xs:element>
+      <xs:element minOccurs="0" name="Department" type="Department"></xs:element>
+      <xs:element minOccurs="0" name="Description">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="1024"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="GLAccount" type="GLAccount"></xs:element>
+      <xs:element minOccurs="0" name="GLPostDate" type="emptiable_dateTime"></xs:element>
+      <xs:element minOccurs="0" name="GovernmentReportingChargeCode">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="20"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="GSTVATBasis" type="CodeDescriptionPair"></xs:element>
+      <xs:element minOccurs="0" name="IsFinalCharge" type="xs:boolean"></xs:element>
+      <xs:element minOccurs="0" name="Job" type="EntityReference"></xs:element>
+      <xs:element minOccurs="0" name="JobRecognitionDate" type="emptiable_dateTime"></xs:element>
+      <xs:element minOccurs="0" name="LocalAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="LocalCurrency" type="Currency"></xs:element>
+      <xs:element minOccurs="0" name="LocalExtraVATAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="LocalGLAccount">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="20"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="LocalGSTVATAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="LocalTotalAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="LocalWHTAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="Organization" type="OrganizationReference"></xs:element>
+      <xs:element minOccurs="0" name="OriginalBatchNumber" type="xs:int"></xs:element>
+      <xs:element minOccurs="0" name="OriginalBatchSequence" type="xs:int"></xs:element>
+      <xs:element minOccurs="0" name="OSAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="OSCurrency" type="Currency"></xs:element>
+      <xs:element minOccurs="0" name="OSExtraVATAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="OSGSTVATAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="OSTotalAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="OSWHTAmount" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="PlaceOfSupply" type="PlaceOfSupply"></xs:element>
+      <xs:element minOccurs="0" name="RecoverableGSTVATPercentage" type="xs:decimal"></xs:element>
+      <xs:element minOccurs="0" name="RevenueRecognitionType">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="ARV"></xs:enumeration>
+            <xs:enumeration value="DEP"></xs:enumeration>
+            <xs:enumeration value="EAD"></xs:enumeration>
+            <xs:enumeration value="EDD"></xs:enumeration>
+            <xs:enumeration value="AWB"></xs:enumeration>
+            <xs:enumeration value="CUS"></xs:enumeration>
+            <xs:enumeration value="DEL"></xs:enumeration>
+            <xs:enumeration value="IMM"></xs:enumeration>
+            <xs:enumeration value="JCL"></xs:enumeration>
+            <xs:enumeration value="JOP"></xs:enumeration>
+            <xs:enumeration value="JOB"></xs:enumeration>
+            <xs:enumeration value="PIC"></xs:enumeration>
+            <xs:enumeration value="FAR"></xs:enumeration>
+            <xs:enumeration value="VAD"></xs:enumeration>
+            <xs:enumeration value="VDD"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="Sequence" type="xs:int"></xs:element>
+      <xs:element minOccurs="0" name="SubAccount">
+        <xs:complexType>
+          <xs:all>
+            <xs:element minOccurs="0" name="Code">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:maxLength value="35"></xs:maxLength>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:element>
+            <xs:element minOccurs="0" name="Type" type="CodeDescriptionPair"></xs:element>
+          </xs:all>
+        </xs:complexType>
+      </xs:element>
+      <xs:element minOccurs="0" name="TaxDate" type="emptiable_date"></xs:element>
+      <xs:element minOccurs="0" name="TaxMessageID" type="TaxMessageID"></xs:element>
+      <xs:element minOccurs="0" name="TransactionCategory">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="3"></xs:maxLength>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="TransactionType">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="JNL"></xs:enumeration>
+            <xs:enumeration value="TRF"></xs:enumeration>
+            <xs:enumeration value="CTR"></xs:enumeration>
+            <xs:enumeration value="PAY"></xs:enumeration>
+            <xs:enumeration value="REC"></xs:enumeration>
+            <xs:enumeration value="EXX"></xs:enumeration>
+            <xs:enumeration value="OVP"></xs:enumeration>
+            <xs:enumeration value="DSC"></xs:enumeration>
+            <xs:enumeration value="OPY"></xs:enumeration>
+            <xs:enumeration value="ORC"></xs:enumeration>
+            <xs:enumeration value="DPY"></xs:enumeration>
+            <xs:enumeration value="DRC"></xs:enumeration>
+            <xs:enumeration value="GJL"></xs:enumeration>
+            <xs:enumeration value="RJL"></xs:enumeration>
+            <xs:enumeration value="AJL"></xs:enumeration>
+            <xs:enumeration value="INV"></xs:enumeration>
+            <xs:enumeration value="CRD"></xs:enumeration>
+            <xs:enumeration value="ADJ"></xs:enumeration>
+            <xs:enumeration value="JRJ"></xs:enumeration>
+            <xs:enumeration value="WIP"></xs:enumeration>
+            <xs:enumeration value="ACR"></xs:enumeration>
+            <xs:enumeration value="REV"></xs:enumeration>
+            <xs:enumeration value="CST"></xs:enumeration>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element minOccurs="0" name="VATTaxID" type="TaxID"></xs:element>
+      <xs:element minOccurs="0" name="WithholdingTaxID" type="TaxID"></xs:element>
+
+      <xs:element minOccurs="0" name="PostingJournalDetailCollection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="PostingJournalDetail">
+              <xs:complexType>
+                <xs:all>
+                  <xs:element minOccurs="0" name="CreditGLAccount" type="GLAccount"></xs:element>
+                  <xs:element minOccurs="0" name="DebitGLAccount" type="GLAccount"></xs:element>
+                  <xs:element minOccurs="0" name="PostingAmount" type="xs:decimal"></xs:element>
+                  <xs:element minOccurs="0" name="PostingCurrency" type="Currency"></xs:element>
+                  <xs:element minOccurs="0" name="PostingDate" type="emptiable_dateTime"></xs:element>
+                  <xs:element minOccurs="0" name="PostingPeriod" type="xs:int"></xs:element>
+                </xs:all>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element minOccurs="0" name="RatingBasisCollection">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element maxOccurs="unbounded" minOccurs="0" name="RatingBasis" type="RatingBasis"></xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+
+</xs:schema>
