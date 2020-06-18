@@ -1,0 +1,16 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://privados.recintos.ws">
+  <xs:import schemaLocation="pedimentoSalida.xsd"></xs:import>
+  <xs:import namespace="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="xsi.xsd"></xs:import>
+  <xs:element name="recibePedimento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="informacionGeneral"></xs:element>
+        <xs:element ref="pedimento"></xs:element>
+        <xs:element ref="aduana"></xs:element>
+        <xs:element ref="patente"></xs:element>
+        <xs:element maxOccurs="unbounded" ref="mercancia"></xs:element>
+      </xs:sequence>
+      <xs:attribute ref="xsi:schemaLocation" use="required"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

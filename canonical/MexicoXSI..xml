@@ -1,0 +1,5 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.w3.org/2001/XMLSchema-instance">
+  <xs:import schemaLocation="pedimentoSalida.xsd"></xs:import>
+  <xs:import namespace="http://privados.recintos.ws" schemaLocation="tns.xsd"></xs:import>
+  <xs:attribute name="schemaLocation"></xs:attribute>
+</xs:schema>

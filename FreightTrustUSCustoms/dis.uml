@@ -1,0 +1,1493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
+  <uml:Model xmi:id="_wMi5sKe5EeqcCO4WdKOaPw" name="dis" URI="http://cbp.dhs.gov/DIS">
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi5sae5EeqcCO4WdKOaPw" name="AdditionalData">
+      <ownedComment xmi:id="_wMi5sqe5EeqcCO4WdKOaPw" annotatedElement="_wMi5sae5EeqcCO4WdKOaPw">
+        <body>Any additional information that a sender wishes to provide in the form of name-value pairs. This data is for information only</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM3CwKe5EeqcCO4WdKOaPw" annotatedElement="_wMi5sae5EeqcCO4WdKOaPw">
+        <body>Any additional information that a sender wishes to provide in the form of name-value pairs. This data is for information only</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi5s6e5EeqcCO4WdKOaPw" name="nameValuePair" type="_wMi5tqe5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi5vKe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi5tKe5EeqcCO4WdKOaPw" annotatedElement="_wMi5s6e5EeqcCO4WdKOaPw">
+          <body>name-value pairs of information to accomodate additional information for flexibility.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM3p0Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi5s6e5EeqcCO4WdKOaPw">
+          <body>name-value pairs of information to accomodate additional information for flexibility.</body>
+        </ownedComment>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi5tae5EeqcCO4WdKOaPw" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi5tqe5EeqcCO4WdKOaPw" name="NameValuePair">
+      <ownedComment xmi:id="_wMi5t6e5EeqcCO4WdKOaPw" annotatedElement="_wMi5tqe5EeqcCO4WdKOaPw">
+        <body>Name-value pairs of information for data of interest not accomodated by explicit XML elements. The below elements will be interpreted as INVOICE_AMT = $640,000 and used for display only</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM3p0ae5EeqcCO4WdKOaPw" annotatedElement="_wMi5tqe5EeqcCO4WdKOaPw">
+        <body>Name-value pairs of information for data of interest not accomodated by explicit XML elements. The below elements will be interpreted as INVOICE_AMT = $640,000 and used for display only</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi5uKe5EeqcCO4WdKOaPw" name="name" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi5uae5EeqcCO4WdKOaPw" annotatedElement="_wMi5uKe5EeqcCO4WdKOaPw">
+          <body>Name of the additional data element ex. INVOICE_AMT</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM3p0qe5EeqcCO4WdKOaPw" annotatedElement="_wMi5uKe5EeqcCO4WdKOaPw">
+          <body>Name of the additional data element ex. INVOICE_AMT</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi5uqe5EeqcCO4WdKOaPw" name="value" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi5u6e5EeqcCO4WdKOaPw" annotatedElement="_wMi5uqe5EeqcCO4WdKOaPw">
+          <body>Value of the additional data element identified in Name (above) ex. $640,000</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM3p06e5EeqcCO4WdKOaPw" annotatedElement="_wMi5uqe5EeqcCO4WdKOaPw">
+          <body>Value of the additional data element identified in Name (above) ex. $640,000</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi5vKe5EeqcCO4WdKOaPw" memberEnd="_wMi5s6e5EeqcCO4WdKOaPw _wMi5vae5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi5vae5EeqcCO4WdKOaPw" type="_wMi5sae5EeqcCO4WdKOaPw" association="_wMi5vKe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi5vqe5EeqcCO4WdKOaPw" name="BillType">
+      <ownedAttribute xmi:id="_wMi5v6e5EeqcCO4WdKOaPw" name="sCAC" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi5wKe5EeqcCO4WdKOaPw" name="billNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi5wae5EeqcCO4WdKOaPw" name="houseBillNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi5wqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi5w6e5EeqcCO4WdKOaPw" name="referenceNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi5xKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi5xae5EeqcCO4WdKOaPw" name="BondData">
+      <ownedComment xmi:id="_wMi5xqe5EeqcCO4WdKOaPw" annotatedElement="_wMi5xae5EeqcCO4WdKOaPw">
+        <body>Bond Specific Information</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM3p1Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi5xae5EeqcCO4WdKOaPw">
+        <body>Bond Specific Information</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi5x6e5EeqcCO4WdKOaPw" name="bondName" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi5yKe5EeqcCO4WdKOaPw" annotatedElement="_wMi5x6e5EeqcCO4WdKOaPw">
+          <body>Name of Bond - Single TXN, ISF Bond etc.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM3p1ae5EeqcCO4WdKOaPw" annotatedElement="_wMi5x6e5EeqcCO4WdKOaPw">
+          <body>Name of Bond - Single TXN, ISF Bond etc.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi5yae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi5yqe5EeqcCO4WdKOaPw" name="bondNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi5y6e5EeqcCO4WdKOaPw" annotatedElement="_wMi5yqe5EeqcCO4WdKOaPw">
+          <body>Bond Number (ID)</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM3p1qe5EeqcCO4WdKOaPw" annotatedElement="_wMi5yqe5EeqcCO4WdKOaPw">
+          <body>Bond Number (ID)</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi5zKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi5zae5EeqcCO4WdKOaPw" name="bondType" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi5zqe5EeqcCO4WdKOaPw" annotatedElement="_wMi5zae5EeqcCO4WdKOaPw">
+          <body>Type of Bond</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM3p16e5EeqcCO4WdKOaPw" annotatedElement="_wMi5zae5EeqcCO4WdKOaPw">
+          <body>Type of Bond</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi5z6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi50Ke5EeqcCO4WdKOaPw" name="suretyCode" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi50ae5EeqcCO4WdKOaPw" annotatedElement="_wMi50Ke5EeqcCO4WdKOaPw">
+          <body>SuretyCode</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM3p2Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi50Ke5EeqcCO4WdKOaPw">
+          <body>SuretyCode</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi50qe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi506e5EeqcCO4WdKOaPw" name="agentIDNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi51Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi506e5EeqcCO4WdKOaPw">
+          <body>AgentIDNbr</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM3p2ae5EeqcCO4WdKOaPw" annotatedElement="_wMi506e5EeqcCO4WdKOaPw">
+          <body>AgentIDNbr</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi51ae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi51qe5EeqcCO4WdKOaPw" name="filer" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi516e5EeqcCO4WdKOaPw" annotatedElement="_wMi51qe5EeqcCO4WdKOaPw">
+          <body>Filer</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM3p2qe5EeqcCO4WdKOaPw" annotatedElement="_wMi51qe5EeqcCO4WdKOaPw">
+          <body>Filer</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi52Ke5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi52ae5EeqcCO4WdKOaPw" name="bondAmount" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi52qe5EeqcCO4WdKOaPw" annotatedElement="_wMi52ae5EeqcCO4WdKOaPw">
+          <body>Amount of the Bond in USD</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM3p26e5EeqcCO4WdKOaPw" annotatedElement="_wMi52ae5EeqcCO4WdKOaPw">
+          <body>Amount of the Bond in USD</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi526e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi53Ke5EeqcCO4WdKOaPw" name="CBPRequest">
+      <ownedAttribute xmi:id="_wMi53ae5EeqcCO4WdKOaPw" name="cBPRequestID" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi53qe5EeqcCO4WdKOaPw" annotatedElement="_wMi53ae5EeqcCO4WdKOaPw">
+          <body>CBP request in response to which this Document is being Sent. Ex. ACE Action Number. Specify 'UNSOLICITED'; 'UNKNOWN' if not known/applicable.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM3p3Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi53ae5EeqcCO4WdKOaPw">
+          <body>CBP request in response to which this Document is being Sent. Ex. ACE Action Number. Specify 'UNSOLICITED'; 'UNKNOWN' if not known/applicable.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi536e5EeqcCO4WdKOaPw" name="cBPRequestType" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi54Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi536e5EeqcCO4WdKOaPw">
+          <body>CBP request in response to which this Document is being Sent. Could be same as ACE Action Number.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM3p3ae5EeqcCO4WdKOaPw" annotatedElement="_wMi536e5EeqcCO4WdKOaPw">
+          <body>CBP request in response to which this Document is being Sent. Could be same as ACE Action Number.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi54ae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi54qe5EeqcCO4WdKOaPw" name="cBPRequestDate" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi546e5EeqcCO4WdKOaPw" annotatedElement="_wMi54qe5EeqcCO4WdKOaPw">
+          <body>Date Time of CBP request in response to which this Document is being Sent</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q4Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi54qe5EeqcCO4WdKOaPw">
+          <body>Date Time of CBP request in response to which this Document is being Sent</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#DateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi55Ke5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi55ae5EeqcCO4WdKOaPw" name="CertificateData">
+      <ownedComment xmi:id="_wMi55qe5EeqcCO4WdKOaPw" annotatedElement="_wMi55ae5EeqcCO4WdKOaPw">
+        <body>Information typically on Certificates</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM4Q4ae5EeqcCO4WdKOaPw" annotatedElement="_wMi55ae5EeqcCO4WdKOaPw">
+        <body>Information typically on Certificates</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi556e5EeqcCO4WdKOaPw" name="certificateNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi56Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi556e5EeqcCO4WdKOaPw">
+          <body>Certificate Number (ID) </body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q4qe5EeqcCO4WdKOaPw" annotatedElement="_wMi556e5EeqcCO4WdKOaPw">
+          <body>Certificate Number (ID) </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi56ae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi56qe5EeqcCO4WdKOaPw" name="certificateType" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi566e5EeqcCO4WdKOaPw" annotatedElement="_wMi56qe5EeqcCO4WdKOaPw">
+          <body>ICertificate Type</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q46e5EeqcCO4WdKOaPw" annotatedElement="_wMi56qe5EeqcCO4WdKOaPw">
+          <body>ICertificate Type</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi57Ke5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi57ae5EeqcCO4WdKOaPw" name="statement" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi57qe5EeqcCO4WdKOaPw" annotatedElement="_wMi57ae5EeqcCO4WdKOaPw">
+          <body>Statement on Certificate</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q5Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi57ae5EeqcCO4WdKOaPw">
+          <body>Statement on Certificate</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi576e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi58Ke5EeqcCO4WdKOaPw" name="expirationDate" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi58ae5EeqcCO4WdKOaPw" annotatedElement="_wMi58Ke5EeqcCO4WdKOaPw">
+          <body>Date the certificate is valid till. EST Format 2010-05-25T00:34:47.0Z</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q5ae5EeqcCO4WdKOaPw" annotatedElement="_wMi58Ke5EeqcCO4WdKOaPw">
+          <body>Date the certificate is valid till. EST Format 2010-05-25T00:34:47.0Z</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#DateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi58qe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi586e5EeqcCO4WdKOaPw" name="importerOfRecord" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi59Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi586e5EeqcCO4WdKOaPw">
+          <body>Importer Of Record</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q5qe5EeqcCO4WdKOaPw" annotatedElement="_wMi586e5EeqcCO4WdKOaPw">
+          <body>Importer Of Record</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi59ae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi59qe5EeqcCO4WdKOaPw" name="inspectionLocation" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi596e5EeqcCO4WdKOaPw" annotatedElement="_wMi59qe5EeqcCO4WdKOaPw">
+          <body>Inspection Location</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q56e5EeqcCO4WdKOaPw" annotatedElement="_wMi59qe5EeqcCO4WdKOaPw">
+          <body>Inspection Location</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi5-Ke5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi5-ae5EeqcCO4WdKOaPw" name="CommodityData">
+      <ownedComment xmi:id="_wMi5-qe5EeqcCO4WdKOaPw" annotatedElement="_wMi5-ae5EeqcCO4WdKOaPw">
+        <body>Commodity Information. Provide what is available</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM4Q6Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi5-ae5EeqcCO4WdKOaPw">
+        <body>Commodity Information. Provide what is available</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi5-6e5EeqcCO4WdKOaPw" name="entryLineNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi5_Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi5-6e5EeqcCO4WdKOaPw">
+          <body>Entry Line Number</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q6ae5EeqcCO4WdKOaPw" annotatedElement="_wMi5-6e5EeqcCO4WdKOaPw">
+          <body>Entry Line Number</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#Int"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi5_ae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi5_qe5EeqcCO4WdKOaPw" name="hTSNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi5_6e5EeqcCO4WdKOaPw" annotatedElement="_wMi5_qe5EeqcCO4WdKOaPw">
+          <body>HTS Number</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q6qe5EeqcCO4WdKOaPw" annotatedElement="_wMi5_qe5EeqcCO4WdKOaPw">
+          <body>HTS Number</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6AKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Aae5EeqcCO4WdKOaPw" name="commodityDescription" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Aqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6Aae5EeqcCO4WdKOaPw">
+          <body>Commodity Description</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q66e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Aae5EeqcCO4WdKOaPw">
+          <body>Commodity Description</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6A6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6BKe5EeqcCO4WdKOaPw" name="countryOfOrigin" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Bae5EeqcCO4WdKOaPw" annotatedElement="_wMi6BKe5EeqcCO4WdKOaPw">
+          <body>Country Of Origin - UNLOC</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q7Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi6BKe5EeqcCO4WdKOaPw">
+          <body>Country Of Origin - UNLOC</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6Bqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6B6e5EeqcCO4WdKOaPw" name="containerNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6CKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6B6e5EeqcCO4WdKOaPw">
+          <body>Container Number</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q7ae5EeqcCO4WdKOaPw" annotatedElement="_wMi6B6e5EeqcCO4WdKOaPw">
+          <body>Container Number</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6Cae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Cqe5EeqcCO4WdKOaPw" name="arrivalDate" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6C6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Cqe5EeqcCO4WdKOaPw">
+          <body>Date the goods are expected. EST Format 2010-05-25T00:34:47.0Z</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q7qe5EeqcCO4WdKOaPw" annotatedElement="_wMi6Cqe5EeqcCO4WdKOaPw">
+          <body>Date the goods are expected. EST Format 2010-05-25T00:34:47.0Z</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#DateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6DKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Dae5EeqcCO4WdKOaPw" name="portOfLading" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Dqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6Dae5EeqcCO4WdKOaPw">
+          <body>Port of Lading - Schedule D</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q76e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Dae5EeqcCO4WdKOaPw">
+          <body>Port of Lading - Schedule D</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6D6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6EKe5EeqcCO4WdKOaPw" name="portOfUnlading" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Eae5EeqcCO4WdKOaPw" annotatedElement="_wMi6EKe5EeqcCO4WdKOaPw">
+          <body>Port of Unlading - Schedule K</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q8Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi6EKe5EeqcCO4WdKOaPw">
+          <body>Port of Unlading - Schedule K</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6Eqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6E6e5EeqcCO4WdKOaPw" name="portOfEntry" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6FKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6E6e5EeqcCO4WdKOaPw">
+          <body>Port of Entry - Schedule K</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q8ae5EeqcCO4WdKOaPw" annotatedElement="_wMi6E6e5EeqcCO4WdKOaPw">
+          <body>Port of Entry - Schedule K</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6Fae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Fqe5EeqcCO4WdKOaPw" name="pPQSignature" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6F6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Fqe5EeqcCO4WdKOaPw">
+          <body>PPQSignature</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q8qe5EeqcCO4WdKOaPw" annotatedElement="_wMi6Fqe5EeqcCO4WdKOaPw">
+          <body>PPQSignature</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6GKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Gae5EeqcCO4WdKOaPw" name="sealNumbers" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Gqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6Gae5EeqcCO4WdKOaPw">
+          <body>Multiple Seal Numbers supplied as a comma separated string ex. ABC123, DEF123, GHI123</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q86e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Gae5EeqcCO4WdKOaPw">
+          <body>Multiple Seal Numbers supplied as a comma separated string ex. ABC123, DEF123, GHI123</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6G6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6HKe5EeqcCO4WdKOaPw" name="tradeParties" type="_wMi6Jae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6Nqe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6Hae5EeqcCO4WdKOaPw" annotatedElement="_wMi6HKe5EeqcCO4WdKOaPw">
+          <body>Commodity Manufacturer</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q9Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi6HKe5EeqcCO4WdKOaPw">
+          <body>Commodity Manufacturer</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6Hqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6H6e5EeqcCO4WdKOaPw" name="filerReferenceNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6IKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6H6e5EeqcCO4WdKOaPw">
+          <body>FilerReferenceNumber</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q-ae5EeqcCO4WdKOaPw" annotatedElement="_wMi6H6e5EeqcCO4WdKOaPw">
+          <body>FilerReferenceNumber</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6Iae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Iqe5EeqcCO4WdKOaPw" name="vehicleAndEngineData" type="_wMi6OKe5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6Vae5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6I6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Iqe5EeqcCO4WdKOaPw">
+          <body>VehicleAndEngineData</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q-qe5EeqcCO4WdKOaPw" annotatedElement="_wMi6Iqe5EeqcCO4WdKOaPw">
+          <body>VehicleAndEngineData</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6JKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi6Jae5EeqcCO4WdKOaPw" name="TradeParties">
+      <ownedAttribute xmi:id="_wMi6Jqe5EeqcCO4WdKOaPw" name="tradeParty" type="_wMi6Kae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6NKe5EeqcCO4WdKOaPw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6J6e5EeqcCO4WdKOaPw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi6KKe5EeqcCO4WdKOaPw" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi6Kae5EeqcCO4WdKOaPw" name="TradePartyInfo">
+      <ownedAttribute xmi:id="_wMi6Kqe5EeqcCO4WdKOaPw" name="tradePartyID" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6K6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Kqe5EeqcCO4WdKOaPw">
+          <body>Unique ID of the Trade Party. ex. ImporterID, ShipperID, CarrierID etc. Send UNKNOWN if only Name and Address available.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q9ae5EeqcCO4WdKOaPw" annotatedElement="_wMi6Kqe5EeqcCO4WdKOaPw">
+          <body>Unique ID of the Trade Party. ex. ImporterID, ShipperID, CarrierID etc. Send UNKNOWN if only Name and Address available.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6LKe5EeqcCO4WdKOaPw" name="tradePartyType" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Lae5EeqcCO4WdKOaPw" annotatedElement="_wMi6LKe5EeqcCO4WdKOaPw">
+          <body>See Enum list in DIS Documentation Guide</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q9qe5EeqcCO4WdKOaPw" annotatedElement="_wMi6LKe5EeqcCO4WdKOaPw">
+          <body>See Enum list in DIS Documentation Guide</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Lqe5EeqcCO4WdKOaPw" name="tradePartyName" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6L6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Lqe5EeqcCO4WdKOaPw">
+          <body>Trade Party Name</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q96e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Lqe5EeqcCO4WdKOaPw">
+          <body>Trade Party Name</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6MKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Mae5EeqcCO4WdKOaPw" name="tradePartyAddress" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Mqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6Mae5EeqcCO4WdKOaPw">
+          <body>Trade Party Address </body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q-Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi6Mae5EeqcCO4WdKOaPw">
+          <body>Trade Party Address </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6M6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6NKe5EeqcCO4WdKOaPw" memberEnd="_wMi6Jqe5EeqcCO4WdKOaPw _wMi6Nae5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6Nae5EeqcCO4WdKOaPw" type="_wMi6Jae5EeqcCO4WdKOaPw" association="_wMi6NKe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6Nqe5EeqcCO4WdKOaPw" memberEnd="_wMi6HKe5EeqcCO4WdKOaPw _wMi6N6e5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6N6e5EeqcCO4WdKOaPw" type="_wMi5-ae5EeqcCO4WdKOaPw" association="_wMi6Nqe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi6OKe5EeqcCO4WdKOaPw" name="VehicleAndEngineData">
+      <ownedComment xmi:id="_wMi6Oae5EeqcCO4WdKOaPw" annotatedElement="_wMi6OKe5EeqcCO4WdKOaPw">
+        <body>VehicleAndEngineData</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM4Q-6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6OKe5EeqcCO4WdKOaPw">
+        <body>VehicleAndEngineData</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi6Oqe5EeqcCO4WdKOaPw" name="vIN" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6O6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Oqe5EeqcCO4WdKOaPw">
+          <body>Vehicle Identification Number</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q_Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi6Oqe5EeqcCO4WdKOaPw">
+          <body>Vehicle Identification Number</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6PKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Pae5EeqcCO4WdKOaPw" name="vehicleManufacturer" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Pqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6Pae5EeqcCO4WdKOaPw">
+          <body>VehicleMake</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q_ae5EeqcCO4WdKOaPw" annotatedElement="_wMi6Pae5EeqcCO4WdKOaPw">
+          <body>VehicleMake</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6P6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6QKe5EeqcCO4WdKOaPw" name="vehicleModel" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Qae5EeqcCO4WdKOaPw" annotatedElement="_wMi6QKe5EeqcCO4WdKOaPw">
+          <body>VehicleModel</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q_qe5EeqcCO4WdKOaPw" annotatedElement="_wMi6QKe5EeqcCO4WdKOaPw">
+          <body>VehicleModel</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6Qqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Q6e5EeqcCO4WdKOaPw" name="vehicleSerialNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6RKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6Q6e5EeqcCO4WdKOaPw">
+          <body>VehicleSerialNumber</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4Q_6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Q6e5EeqcCO4WdKOaPw">
+          <body>VehicleSerialNumber</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6Rae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Rqe5EeqcCO4WdKOaPw" name="vehicleManufactureDate" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6R6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Rqe5EeqcCO4WdKOaPw">
+          <body>VehicleSerialNumber</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM438Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi6Rqe5EeqcCO4WdKOaPw">
+          <body>VehicleSerialNumber</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#DateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6SKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Sae5EeqcCO4WdKOaPw" name="engineManufacturer" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Sqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6Sae5EeqcCO4WdKOaPw">
+          <body>EngineManufacturer</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM438ae5EeqcCO4WdKOaPw" annotatedElement="_wMi6Sae5EeqcCO4WdKOaPw">
+          <body>EngineManufacturer</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6S6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6TKe5EeqcCO4WdKOaPw" name="engineModel" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Tae5EeqcCO4WdKOaPw" annotatedElement="_wMi6TKe5EeqcCO4WdKOaPw">
+          <body>EngineModel</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM438qe5EeqcCO4WdKOaPw" annotatedElement="_wMi6TKe5EeqcCO4WdKOaPw">
+          <body>EngineModel</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6Tqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6T6e5EeqcCO4WdKOaPw" name="engineSerialNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6UKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6T6e5EeqcCO4WdKOaPw">
+          <body>EngineSerialNumber</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4386e5EeqcCO4WdKOaPw" annotatedElement="_wMi6T6e5EeqcCO4WdKOaPw">
+          <body>EngineSerialNumber</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6Uae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Uqe5EeqcCO4WdKOaPw" name="engineManufactureDate" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6U6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Uqe5EeqcCO4WdKOaPw">
+          <body>EngineManufactureDate</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM439Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi6Uqe5EeqcCO4WdKOaPw">
+          <body>EngineManufactureDate</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#DateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6VKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6Vae5EeqcCO4WdKOaPw" memberEnd="_wMi6Iqe5EeqcCO4WdKOaPw _wMi6Vqe5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6Vqe5EeqcCO4WdKOaPw" type="_wMi5-ae5EeqcCO4WdKOaPw" association="_wMi6Vae5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi6V6e5EeqcCO4WdKOaPw" name="CommodityList">
+      <ownedAttribute xmi:id="_wMi6WKe5EeqcCO4WdKOaPw" name="commodityData" type="_wMi5-ae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6Wqe5EeqcCO4WdKOaPw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi6Wae5EeqcCO4WdKOaPw" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6Wqe5EeqcCO4WdKOaPw" memberEnd="_wMi6WKe5EeqcCO4WdKOaPw _wMi6W6e5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6W6e5EeqcCO4WdKOaPw" type="_wMi6V6e5EeqcCO4WdKOaPw" association="_wMi6Wqe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi6XKe5EeqcCO4WdKOaPw" name="ContactInfoType">
+      <ownedAttribute xmi:id="_wMi6Xae5EeqcCO4WdKOaPw" name="pOCInfo" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Xqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6Xae5EeqcCO4WdKOaPw">
+          <body>POC Contact</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM439ae5EeqcCO4WdKOaPw" annotatedElement="_wMi6Xae5EeqcCO4WdKOaPw">
+          <body>POC Contact</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6X6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6YKe5EeqcCO4WdKOaPw" name="pOCPhoneNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6Yae5EeqcCO4WdKOaPw" annotatedElement="_wMi6YKe5EeqcCO4WdKOaPw">
+          <body>POC_PhoneNumber</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM439qe5EeqcCO4WdKOaPw" annotatedElement="_wMi6YKe5EeqcCO4WdKOaPw">
+          <body>POC_PhoneNumber</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6Yqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6Y6e5EeqcCO4WdKOaPw" name="returnEmailAddress" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6ZKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6Y6e5EeqcCO4WdKOaPw">
+          <body>Email address of return party</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM4396e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Y6e5EeqcCO4WdKOaPw">
+          <body>Email address of return party</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6Zae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi6Zqe5EeqcCO4WdKOaPw" name="DocumentData">
+      <ownedComment xmi:id="_wMi6Z6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6Zqe5EeqcCO4WdKOaPw">
+        <body>Document data such as Document ID, Label, Name, Version etc describing the submitted document</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM43-Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi6Zqe5EeqcCO4WdKOaPw">
+        <body>Document data such as Document ID, Label, Name, Version etc describing the submitted document</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi6aKe5EeqcCO4WdKOaPw" name="documentHeader" type="_wMi6eae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6jKe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6aae5EeqcCO4WdKOaPw" annotatedElement="_wMi6aKe5EeqcCO4WdKOaPw">
+          <body>Key information needed to identify and locate a document</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM43-ae5EeqcCO4WdKOaPw" annotatedElement="_wMi6aKe5EeqcCO4WdKOaPw">
+          <body>Key information needed to identify and locate a document</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6aqe5EeqcCO4WdKOaPw" name="govtAgencyList" type="_wMi6jqe5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6kqe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6a6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6aqe5EeqcCO4WdKOaPw">
+          <body>Optional - List of Government Agencies that this document is being submitted to.
+					    NOTE: Please see the DIS Implementation guide published on CBP.GOV for the current list of supported values for this field.  
+					</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44Aqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6aqe5EeqcCO4WdKOaPw">
+          <body>Optional - List of Government Agencies that this document is being submitted to.
+					    NOTE: Please see the DIS Implementation guide published on CBP.GOV for the current list of supported values for this field.  
+					</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6bKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6bae5EeqcCO4WdKOaPw" name="comment" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6bqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6bae5EeqcCO4WdKOaPw">
+          <body>Optional - Any Explanatory comment regarding the document or business transaction for this document</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44BKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6bae5EeqcCO4WdKOaPw">
+          <body>Optional - Any Explanatory comment regarding the document or business transaction for this document</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6b6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6cKe5EeqcCO4WdKOaPw" name="optionalData" type="_wMi6lKe5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6_qe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6cae5EeqcCO4WdKOaPw" annotatedElement="_wMi6cKe5EeqcCO4WdKOaPw">
+          <body>Additional Optional Data included in support of the document submission</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44Bae5EeqcCO4WdKOaPw" annotatedElement="_wMi6cKe5EeqcCO4WdKOaPw">
+          <body>Additional Optional Data included in support of the document submission</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6cqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6c6e5EeqcCO4WdKOaPw" name="vesselData" type="_wMi7AKe5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi7H6e5EeqcCO4WdKOaPw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6dKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6dae5EeqcCO4WdKOaPw" name="contactInfo" type="_wMi6XKe5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi7Iae5EeqcCO4WdKOaPw">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6dqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6d6e5EeqcCO4WdKOaPw" name="documentObject" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6eKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6d6e5EeqcCO4WdKOaPw">
+          <body>Required - Actual document or image that is Base64Encoded to convert to a string</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fGqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6d6e5EeqcCO4WdKOaPw">
+          <body>Required - Actual document or image that is Base64Encoded to convert to a string</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi6eae5EeqcCO4WdKOaPw" name="DocumentHeader">
+      <ownedComment xmi:id="_wMi6eqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6eae5EeqcCO4WdKOaPw">
+        <body>Elements that are used to identify/locate a unique document submission.</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM43-qe5EeqcCO4WdKOaPw" annotatedElement="_wMi6eae5EeqcCO4WdKOaPw">
+        <body>Elements that are used to identify/locate a unique document submission.</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi6e6e5EeqcCO4WdKOaPw" name="documentID" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6fKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6e6e5EeqcCO4WdKOaPw">
+          <body>Required - Generated by the sending system for traceability. Should be UniqueID within the sending system.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM43-6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6e6e5EeqcCO4WdKOaPw">
+          <body>Required - Generated by the sending system for traceability. Should be UniqueID within the sending system.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6fae5EeqcCO4WdKOaPw" name="documentLabel" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6fqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6fae5EeqcCO4WdKOaPw">
+          <body>Required - Form-Label of the submitted Document. Ex CBP Form 301.
+					    NOTE: Please see the DIS Implementation guide for the current list of supported values for this field.  
+					</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM43_Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi6fae5EeqcCO4WdKOaPw">
+          <body>Required - Form-Label of the submitted Document. Ex CBP Form 301.
+					    NOTE: Please see the DIS Implementation guide for the current list of supported values for this field.  
+					</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6f6e5EeqcCO4WdKOaPw" name="completeFileName" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6gKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6f6e5EeqcCO4WdKOaPw">
+          <body>Complete File Name (example filename.pdf).  EXCLUSIONS for constructing filename are the following; DO NOT USE Apostrophe, /, \ , %, ampersand within filename and spaces before or after file name, double spaces within name</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM43_ae5EeqcCO4WdKOaPw" annotatedElement="_wMi6f6e5EeqcCO4WdKOaPw">
+          <body>Complete File Name (example filename.pdf).  EXCLUSIONS for constructing filename are the following; DO NOT USE Apostrophe, /, \ , %, ampersand within filename and spaces before or after file name, double spaces within name</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6gae5EeqcCO4WdKOaPw" name="fileExtensionType" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6gqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6gae5EeqcCO4WdKOaPw">
+          <body>File Extension Type PDF;DOCX etc 
+					    NOTE: Please see the DIS Implementation guide for the current list of supported values for this field.  
+					</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM43_qe5EeqcCO4WdKOaPw" annotatedElement="_wMi6gae5EeqcCO4WdKOaPw">
+          <body>File Extension Type PDF;DOCX etc 
+					    NOTE: Please see the DIS Implementation guide for the current list of supported values for this field.  
+					</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6g6e5EeqcCO4WdKOaPw" name="documentDescription" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6hKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6g6e5EeqcCO4WdKOaPw">
+          <body>Free Form description of document if needed </body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM43_6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6g6e5EeqcCO4WdKOaPw">
+          <body>Free Form description of document if needed </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6hae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6hqe5EeqcCO4WdKOaPw" name="documentSentDate" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6h6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6hqe5EeqcCO4WdKOaPw">
+          <body>Date and Time when the document was sent to CBP if known. EST Format 2010-05-25T00:34:47.0Z </body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44AKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6hqe5EeqcCO4WdKOaPw">
+          <body>Date and Time when the document was sent to CBP if known. EST Format 2010-05-25T00:34:47.0Z </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#DateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6iKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6iae5EeqcCO4WdKOaPw" name="docPreviouslySubmitted" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6iqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6iae5EeqcCO4WdKOaPw">
+          <body>Y or N. Use Y to indicate that the document was previously submitted to CBP, and that this transaction should refer to. 
+					        NOTE: DocumentName will be used to refer to the on-file document.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44Aae5EeqcCO4WdKOaPw" annotatedElement="_wMi6iae5EeqcCO4WdKOaPw">
+          <body>Y or N. Use Y to indicate that the document was previously submitted to CBP, and that this transaction should refer to. 
+					        NOTE: DocumentName will be used to refer to the on-file document.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6i6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6jKe5EeqcCO4WdKOaPw" memberEnd="_wMi6aKe5EeqcCO4WdKOaPw _wMi6jae5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6jae5EeqcCO4WdKOaPw" type="_wMi6Zqe5EeqcCO4WdKOaPw" association="_wMi6jKe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi6jqe5EeqcCO4WdKOaPw" name="GovtAgencyList">
+      <ownedAttribute xmi:id="_wMi6j6e5EeqcCO4WdKOaPw" name="govtAgency" visibility="public" isOrdered="true" isUnique="false">
+        <ownedComment xmi:id="_wMi6kKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6j6e5EeqcCO4WdKOaPw">
+          <body>The Government Agency (one or more) that this document is intended for. The Document will be made available to only the specified agency or per current govt policy if this policy changes</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44A6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6j6e5EeqcCO4WdKOaPw">
+          <body>The Government Agency (one or more) that this document is intended for. The Document will be made available to only the specified agency or per current govt policy if this policy changes</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi6kae5EeqcCO4WdKOaPw" value="50"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6kqe5EeqcCO4WdKOaPw" memberEnd="_wMi6aqe5EeqcCO4WdKOaPw _wMi6k6e5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6k6e5EeqcCO4WdKOaPw" type="_wMi6Zqe5EeqcCO4WdKOaPw" association="_wMi6kqe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi6lKe5EeqcCO4WdKOaPw" name="OptionalData">
+      <ownedAttribute xmi:id="_wMi6lae5EeqcCO4WdKOaPw" name="invoiceData" type="_wMi6rae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6wae5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6lqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6lae5EeqcCO4WdKOaPw">
+          <body>Invoice or Invoice Worksheet Specific Information</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44Bqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6lae5EeqcCO4WdKOaPw">
+          <body>Invoice or Invoice Worksheet Specific Information</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6l6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6mKe5EeqcCO4WdKOaPw" name="bondData" type="_wMi5xae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6w6e5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6mae5EeqcCO4WdKOaPw" annotatedElement="_wMi6mKe5EeqcCO4WdKOaPw">
+          <body>Bond Specific Information</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44Dqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6mKe5EeqcCO4WdKOaPw">
+          <body>Bond Specific Information</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6mqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6m6e5EeqcCO4WdKOaPw" name="packingListData" type="_wMi6xae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi60Ke5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6nKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6m6e5EeqcCO4WdKOaPw">
+          <body>Packing List Specific Information</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44D6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6m6e5EeqcCO4WdKOaPw">
+          <body>Packing List Specific Information</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6nae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6nqe5EeqcCO4WdKOaPw" name="certificateData" type="_wMi55ae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi60qe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6n6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6nqe5EeqcCO4WdKOaPw">
+          <body>Certificate Info. ex. NOAA Certifcate of Origin</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44FKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6nqe5EeqcCO4WdKOaPw">
+          <body>Certificate Info. ex. NOAA Certifcate of Origin</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6oKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6oae5EeqcCO4WdKOaPw" name="permitData" type="_wMi61Ke5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi666e5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6oqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6oae5EeqcCO4WdKOaPw">
+          <body>Permit Info. ex.Import Permit USDA Regulations</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fAKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6oae5EeqcCO4WdKOaPw">
+          <body>Permit Info. ex.Import Permit USDA Regulations</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6o6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6pKe5EeqcCO4WdKOaPw" name="toxicSubstancesData" type="_wMi67ae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6-Ke5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6pae5EeqcCO4WdKOaPw" annotatedElement="_wMi6pKe5EeqcCO4WdKOaPw">
+          <body>Toxic Substance Info. Ex. EPA Data</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fCae5EeqcCO4WdKOaPw" annotatedElement="_wMi6pKe5EeqcCO4WdKOaPw">
+          <body>Toxic Substance Info. Ex. EPA Data</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6pqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6p6e5EeqcCO4WdKOaPw" name="commodityList" type="_wMi6V6e5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6-qe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6qKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6p6e5EeqcCO4WdKOaPw">
+          <body>Optional - Commodity Information if not specified elsewhere in submitted XML.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fDqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6p6e5EeqcCO4WdKOaPw">
+          <body>Optional - Commodity Information if not specified elsewhere in submitted XML.</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6qae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6qqe5EeqcCO4WdKOaPw" name="additionalData" type="_wMi5sae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6_Ke5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6q6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6qqe5EeqcCO4WdKOaPw">
+          <body>Optional - Additional data in the form of Name-Value Pairs in case sender wishes to transmit data not accomodated in this schema. ex. INVOICE_AMT = $640,000</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fD6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6qqe5EeqcCO4WdKOaPw">
+          <body>Optional - Additional data in the form of Name-Value Pairs in case sender wishes to transmit data not accomodated in this schema. ex. INVOICE_AMT = $640,000</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6rKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi6rae5EeqcCO4WdKOaPw" name="InvoiceData">
+      <ownedComment xmi:id="_wMi6rqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6rae5EeqcCO4WdKOaPw">
+        <body>Invoice Specific Information</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM44B6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6rae5EeqcCO4WdKOaPw">
+        <body>Invoice Specific Information</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi6r6e5EeqcCO4WdKOaPw" name="invoiceNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6sKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6r6e5EeqcCO4WdKOaPw">
+          <body>Invoice Nbr</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44CKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6r6e5EeqcCO4WdKOaPw">
+          <body>Invoice Nbr</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6sae5EeqcCO4WdKOaPw" name="invoiceType" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6sqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6sae5EeqcCO4WdKOaPw">
+          <body>Invoice Type. Ex. Commercial Invoice etc</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44Cae5EeqcCO4WdKOaPw" annotatedElement="_wMi6sae5EeqcCO4WdKOaPw">
+          <body>Invoice Type. Ex. Commercial Invoice etc</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6s6e5EeqcCO4WdKOaPw" name="invoiceLineItemData" type="_wMi6t6e5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6v6e5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6tKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6s6e5EeqcCO4WdKOaPw">
+          <body>Invoice Line Nbr level information</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44Cqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6s6e5EeqcCO4WdKOaPw">
+          <body>Invoice Line Nbr level information</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6tae5EeqcCO4WdKOaPw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi6tqe5EeqcCO4WdKOaPw" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi6t6e5EeqcCO4WdKOaPw" name="InvoiceLineItemData">
+      <ownedComment xmi:id="_wMi6uKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6t6e5EeqcCO4WdKOaPw">
+        <body>Invoice Line Item Level Information</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM44C6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6t6e5EeqcCO4WdKOaPw">
+        <body>Invoice Line Item Level Information</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi6uae5EeqcCO4WdKOaPw" name="invoiceLineNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6uqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6uae5EeqcCO4WdKOaPw">
+          <body>name-value pairs of information to accomodate additional information for flexibility.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44DKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6uae5EeqcCO4WdKOaPw">
+          <body>name-value pairs of information to accomodate additional information for flexibility.</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6u6e5EeqcCO4WdKOaPw" name="commodityData" type="_wMi5-ae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi6vae5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi6vKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6u6e5EeqcCO4WdKOaPw">
+          <body>Commodity Information at each line item level </body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44Dae5EeqcCO4WdKOaPw" annotatedElement="_wMi6u6e5EeqcCO4WdKOaPw">
+          <body>Commodity Information at each line item level </body>
+        </ownedComment>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6vae5EeqcCO4WdKOaPw" memberEnd="_wMi6u6e5EeqcCO4WdKOaPw _wMi6vqe5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6vqe5EeqcCO4WdKOaPw" type="_wMi6t6e5EeqcCO4WdKOaPw" association="_wMi6vae5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6v6e5EeqcCO4WdKOaPw" memberEnd="_wMi6s6e5EeqcCO4WdKOaPw _wMi6wKe5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6wKe5EeqcCO4WdKOaPw" type="_wMi6rae5EeqcCO4WdKOaPw" association="_wMi6v6e5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6wae5EeqcCO4WdKOaPw" memberEnd="_wMi6lae5EeqcCO4WdKOaPw _wMi6wqe5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6wqe5EeqcCO4WdKOaPw" type="_wMi6lKe5EeqcCO4WdKOaPw" association="_wMi6wae5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6w6e5EeqcCO4WdKOaPw" memberEnd="_wMi6mKe5EeqcCO4WdKOaPw _wMi6xKe5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6xKe5EeqcCO4WdKOaPw" type="_wMi6lKe5EeqcCO4WdKOaPw" association="_wMi6w6e5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi6xae5EeqcCO4WdKOaPw" name="PackingListData">
+      <ownedComment xmi:id="_wMi6xqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6xae5EeqcCO4WdKOaPw">
+        <body>Packing List Specific Information</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM44EKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6xae5EeqcCO4WdKOaPw">
+        <body>Packing List Specific Information</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi6x6e5EeqcCO4WdKOaPw" name="packingListNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6yKe5EeqcCO4WdKOaPw" annotatedElement="_wMi6x6e5EeqcCO4WdKOaPw">
+          <body>Invoice Nbr</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44Eae5EeqcCO4WdKOaPw" annotatedElement="_wMi6x6e5EeqcCO4WdKOaPw">
+          <body>Invoice Nbr</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6yae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6yqe5EeqcCO4WdKOaPw" name="invoiceNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6y6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6yqe5EeqcCO4WdKOaPw">
+          <body>Invoice Number. Add any details in InvoiceData Element</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44Eqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6yqe5EeqcCO4WdKOaPw">
+          <body>Invoice Number. Add any details in InvoiceData Element</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6zKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi6zae5EeqcCO4WdKOaPw" name="purchaseOrderNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi6zqe5EeqcCO4WdKOaPw" annotatedElement="_wMi6zae5EeqcCO4WdKOaPw">
+          <body>Purchase Order Nbr</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM44E6e5EeqcCO4WdKOaPw" annotatedElement="_wMi6zae5EeqcCO4WdKOaPw">
+          <body>Purchase Order Nbr</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi6z6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi60Ke5EeqcCO4WdKOaPw" memberEnd="_wMi6m6e5EeqcCO4WdKOaPw _wMi60ae5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi60ae5EeqcCO4WdKOaPw" type="_wMi6lKe5EeqcCO4WdKOaPw" association="_wMi60Ke5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi60qe5EeqcCO4WdKOaPw" memberEnd="_wMi6nqe5EeqcCO4WdKOaPw _wMi606e5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi606e5EeqcCO4WdKOaPw" type="_wMi6lKe5EeqcCO4WdKOaPw" association="_wMi60qe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi61Ke5EeqcCO4WdKOaPw" name="PermitData">
+      <ownedComment xmi:id="_wMi61ae5EeqcCO4WdKOaPw" annotatedElement="_wMi61Ke5EeqcCO4WdKOaPw">
+        <body>Information typically on Permits</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM5fAae5EeqcCO4WdKOaPw" annotatedElement="_wMi61Ke5EeqcCO4WdKOaPw">
+        <body>Information typically on Permits</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi61qe5EeqcCO4WdKOaPw" name="permitNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi616e5EeqcCO4WdKOaPw" annotatedElement="_wMi61qe5EeqcCO4WdKOaPw">
+          <body>permit Number (ID) </body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fAqe5EeqcCO4WdKOaPw" annotatedElement="_wMi61qe5EeqcCO4WdKOaPw">
+          <body>permit Number (ID) </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi62Ke5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi62ae5EeqcCO4WdKOaPw" name="permitType" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi62qe5EeqcCO4WdKOaPw" annotatedElement="_wMi62ae5EeqcCO4WdKOaPw">
+          <body>Permit Type</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fA6e5EeqcCO4WdKOaPw" annotatedElement="_wMi62ae5EeqcCO4WdKOaPw">
+          <body>Permit Type</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi626e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi63Ke5EeqcCO4WdKOaPw" name="approvalNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi63ae5EeqcCO4WdKOaPw" annotatedElement="_wMi63Ke5EeqcCO4WdKOaPw">
+          <body>Approval Number </body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fBKe5EeqcCO4WdKOaPw" annotatedElement="_wMi63Ke5EeqcCO4WdKOaPw">
+          <body>Approval Number </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi63qe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi636e5EeqcCO4WdKOaPw" name="statement" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi64Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi636e5EeqcCO4WdKOaPw">
+          <body>Statement on Permit</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fBae5EeqcCO4WdKOaPw" annotatedElement="_wMi636e5EeqcCO4WdKOaPw">
+          <body>Statement on Permit</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi64ae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi64qe5EeqcCO4WdKOaPw" name="startDate" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi646e5EeqcCO4WdKOaPw" annotatedElement="_wMi64qe5EeqcCO4WdKOaPw">
+          <body>Start Date the Permit is valid from EST Format 2010-05-25T00:34:47.0Z</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fBqe5EeqcCO4WdKOaPw" annotatedElement="_wMi64qe5EeqcCO4WdKOaPw">
+          <body>Start Date the Permit is valid from EST Format 2010-05-25T00:34:47.0Z</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#DateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi65Ke5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi65ae5EeqcCO4WdKOaPw" name="endDate" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi65qe5EeqcCO4WdKOaPw" annotatedElement="_wMi65ae5EeqcCO4WdKOaPw">
+          <body>End Date the Permit is valid till. EST Format 2010-05-25T00:34:47.0Z</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fB6e5EeqcCO4WdKOaPw" annotatedElement="_wMi65ae5EeqcCO4WdKOaPw">
+          <body>End Date the Permit is valid till. EST Format 2010-05-25T00:34:47.0Z</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#DateTime"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi656e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi66Ke5EeqcCO4WdKOaPw" name="importerOfRecord" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi66ae5EeqcCO4WdKOaPw" annotatedElement="_wMi66Ke5EeqcCO4WdKOaPw">
+          <body>Importer Of Record</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fCKe5EeqcCO4WdKOaPw" annotatedElement="_wMi66Ke5EeqcCO4WdKOaPw">
+          <body>Importer Of Record</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi66qe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi666e5EeqcCO4WdKOaPw" memberEnd="_wMi6oae5EeqcCO4WdKOaPw _wMi67Ke5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi67Ke5EeqcCO4WdKOaPw" type="_wMi6lKe5EeqcCO4WdKOaPw" association="_wMi666e5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi67ae5EeqcCO4WdKOaPw" name="ToxicSubstancesData">
+      <ownedComment xmi:id="_wMi67qe5EeqcCO4WdKOaPw" annotatedElement="_wMi67ae5EeqcCO4WdKOaPw">
+        <body>Toxic Substances Data</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM5fCqe5EeqcCO4WdKOaPw" annotatedElement="_wMi67ae5EeqcCO4WdKOaPw">
+        <body>Toxic Substances Data</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi676e5EeqcCO4WdKOaPw" name="cASNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi68Ke5EeqcCO4WdKOaPw" annotatedElement="_wMi676e5EeqcCO4WdKOaPw">
+          <body>CAS Nbr. Use comma separated list for Many CAS Nbrs Ex. A, B, C</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fC6e5EeqcCO4WdKOaPw" annotatedElement="_wMi676e5EeqcCO4WdKOaPw">
+          <body>CAS Nbr. Use comma separated list for Many CAS Nbrs Ex. A, B, C</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi68ae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi68qe5EeqcCO4WdKOaPw" name="ePARegistrationNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi686e5EeqcCO4WdKOaPw" annotatedElement="_wMi68qe5EeqcCO4WdKOaPw">
+          <body>Container Number</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fDKe5EeqcCO4WdKOaPw" annotatedElement="_wMi68qe5EeqcCO4WdKOaPw">
+          <body>Container Number</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi69Ke5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi69ae5EeqcCO4WdKOaPw" name="ePAProducerEstNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi69qe5EeqcCO4WdKOaPw" annotatedElement="_wMi69ae5EeqcCO4WdKOaPw">
+          <body>EPAProducerEstNbr</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fDae5EeqcCO4WdKOaPw" annotatedElement="_wMi69ae5EeqcCO4WdKOaPw">
+          <body>EPAProducerEstNbr</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi696e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6-Ke5EeqcCO4WdKOaPw" memberEnd="_wMi6pKe5EeqcCO4WdKOaPw _wMi6-ae5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6-ae5EeqcCO4WdKOaPw" type="_wMi6lKe5EeqcCO4WdKOaPw" association="_wMi6-Ke5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6-qe5EeqcCO4WdKOaPw" memberEnd="_wMi6p6e5EeqcCO4WdKOaPw _wMi6-6e5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6-6e5EeqcCO4WdKOaPw" type="_wMi6lKe5EeqcCO4WdKOaPw" association="_wMi6-qe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6_Ke5EeqcCO4WdKOaPw" memberEnd="_wMi6qqe5EeqcCO4WdKOaPw _wMi6_ae5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6_ae5EeqcCO4WdKOaPw" type="_wMi6lKe5EeqcCO4WdKOaPw" association="_wMi6_Ke5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi6_qe5EeqcCO4WdKOaPw" memberEnd="_wMi6cKe5EeqcCO4WdKOaPw _wMi6_6e5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi6_6e5EeqcCO4WdKOaPw" type="_wMi6Zqe5EeqcCO4WdKOaPw" association="_wMi6_qe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi7AKe5EeqcCO4WdKOaPw" name="VesselDataType">
+      <ownedAttribute xmi:id="_wMi7Aae5EeqcCO4WdKOaPw" name="carrierSCAC" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7Aqe5EeqcCO4WdKOaPw" annotatedElement="_wMi7Aae5EeqcCO4WdKOaPw">
+          <body>SCAC Code</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fEKe5EeqcCO4WdKOaPw" annotatedElement="_wMi7Aae5EeqcCO4WdKOaPw">
+          <body>SCAC Code</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7A6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7BKe5EeqcCO4WdKOaPw" name="licensePermitNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7Bae5EeqcCO4WdKOaPw" annotatedElement="_wMi7BKe5EeqcCO4WdKOaPw">
+          <body>License permit number</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fEae5EeqcCO4WdKOaPw" annotatedElement="_wMi7BKe5EeqcCO4WdKOaPw">
+          <body>License permit number</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7Bqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7B6e5EeqcCO4WdKOaPw" name="certificateNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7CKe5EeqcCO4WdKOaPw" annotatedElement="_wMi7B6e5EeqcCO4WdKOaPw">
+          <body>Certificate Number</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fEqe5EeqcCO4WdKOaPw" annotatedElement="_wMi7B6e5EeqcCO4WdKOaPw">
+          <body>Certificate Number</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7Cae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Cqe5EeqcCO4WdKOaPw" name="issueDate" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7C6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7Cqe5EeqcCO4WdKOaPw">
+          <body>License issue date</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fE6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7Cqe5EeqcCO4WdKOaPw">
+          <body>License issue date</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7DKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Dae5EeqcCO4WdKOaPw" name="expirationDate" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7Dqe5EeqcCO4WdKOaPw" annotatedElement="_wMi7Dae5EeqcCO4WdKOaPw">
+          <body>License expiration date </body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fFKe5EeqcCO4WdKOaPw" annotatedElement="_wMi7Dae5EeqcCO4WdKOaPw">
+          <body>License expiration date </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7D6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7EKe5EeqcCO4WdKOaPw" name="grossTonnage" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7Eae5EeqcCO4WdKOaPw" annotatedElement="_wMi7EKe5EeqcCO4WdKOaPw">
+          <body>Gross tonnage (weight) </body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fFae5EeqcCO4WdKOaPw" annotatedElement="_wMi7EKe5EeqcCO4WdKOaPw">
+          <body>Gross tonnage (weight) </body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7Eqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7E6e5EeqcCO4WdKOaPw" name="netTonnage" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7FKe5EeqcCO4WdKOaPw" annotatedElement="_wMi7E6e5EeqcCO4WdKOaPw">
+          <body>Net Tonnage</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fFqe5EeqcCO4WdKOaPw" annotatedElement="_wMi7E6e5EeqcCO4WdKOaPw">
+          <body>Net Tonnage</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7Fae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Fqe5EeqcCO4WdKOaPw" name="vesselVoyageNumber" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7F6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7Fqe5EeqcCO4WdKOaPw">
+          <body>Vessel Voyage Number</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fF6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7Fqe5EeqcCO4WdKOaPw">
+          <body>Vessel Voyage Number</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7GKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Gae5EeqcCO4WdKOaPw" name="vesselVoyageSegmentNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7Gqe5EeqcCO4WdKOaPw" annotatedElement="_wMi7Gae5EeqcCO4WdKOaPw">
+          <body>Vessel Voyage Segment Number</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fGKe5EeqcCO4WdKOaPw" annotatedElement="_wMi7Gae5EeqcCO4WdKOaPw">
+          <body>Vessel Voyage Segment Number</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7G6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7HKe5EeqcCO4WdKOaPw" name="vesselInspectionID" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7Hae5EeqcCO4WdKOaPw" annotatedElement="_wMi7HKe5EeqcCO4WdKOaPw">
+          <body>Vessel Inspection ID</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fGae5EeqcCO4WdKOaPw" annotatedElement="_wMi7HKe5EeqcCO4WdKOaPw">
+          <body>Vessel Inspection ID</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7Hqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi7H6e5EeqcCO4WdKOaPw" memberEnd="_wMi6c6e5EeqcCO4WdKOaPw _wMi7IKe5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi7IKe5EeqcCO4WdKOaPw" type="_wMi6Zqe5EeqcCO4WdKOaPw" association="_wMi7H6e5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi7Iae5EeqcCO4WdKOaPw" memberEnd="_wMi6dae5EeqcCO4WdKOaPw _wMi7Iqe5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi7Iqe5EeqcCO4WdKOaPw" type="_wMi6Zqe5EeqcCO4WdKOaPw" association="_wMi7Iae5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi7I6e5EeqcCO4WdKOaPw" name="EntrySummaryType">
+      <ownedAttribute xmi:id="_wMi7JKe5EeqcCO4WdKOaPw" name="entryNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Jae5EeqcCO4WdKOaPw" name="filer" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Jqe5EeqcCO4WdKOaPw" name="entryLineNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7J6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7KKe5EeqcCO4WdKOaPw" name="referenceNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7Kae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi7Kqe5EeqcCO4WdKOaPw" name="EntryType">
+      <ownedAttribute xmi:id="_wMi7K6e5EeqcCO4WdKOaPw" name="entryNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7LKe5EeqcCO4WdKOaPw" name="filer" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Lae5EeqcCO4WdKOaPw" name="entryLineNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7Lqe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7L6e5EeqcCO4WdKOaPw" name="referenceNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7MKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi7Mae5EeqcCO4WdKOaPw" name="InvoiceLineItemList">
+      <ownedAttribute xmi:id="_wMi7Mqe5EeqcCO4WdKOaPw" name="invoiceLineItemData" type="_wMi6t6e5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi7NKe5EeqcCO4WdKOaPw">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi7M6e5EeqcCO4WdKOaPw" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi7NKe5EeqcCO4WdKOaPw" memberEnd="_wMi7Mqe5EeqcCO4WdKOaPw _wMi7Nae5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi7Nae5EeqcCO4WdKOaPw" type="_wMi7Mae5EeqcCO4WdKOaPw" association="_wMi7NKe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi7Nqe5EeqcCO4WdKOaPw" name="ISFNumberType">
+      <ownedAttribute xmi:id="_wMi7N6e5EeqcCO4WdKOaPw" name="filer" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7OKe5EeqcCO4WdKOaPw" name="iSFNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi7Oae5EeqcCO4WdKOaPw" name="ITNType">
+      <ownedAttribute xmi:id="_wMi7Oqe5EeqcCO4WdKOaPw" name="iTN" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7O6e5EeqcCO4WdKOaPw" name="referenceNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7PKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi7Pae5EeqcCO4WdKOaPw" name="OtherTransactionType">
+      <ownedAttribute xmi:id="_wMi7Pqe5EeqcCO4WdKOaPw" name="transactionName" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7P6e5EeqcCO4WdKOaPw" name="transactionNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi7QKe5EeqcCO4WdKOaPw" name="PackageIdentifierType">
+      <ownedComment xmi:id="_wMi7Qae5EeqcCO4WdKOaPw" annotatedElement="_wMi7QKe5EeqcCO4WdKOaPw">
+        <body>Can be used to provide CBMA IOR Number</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM5fG6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7QKe5EeqcCO4WdKOaPw">
+        <body>Can be used to provide CBMA IOR Number</body>
+      </ownedComment>
+      <ownedAttribute xmi:id="_wMi7Qqe5EeqcCO4WdKOaPw" name="packageCategory" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7Q6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7Qqe5EeqcCO4WdKOaPw">
+          <body>Package Category</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fHKe5EeqcCO4WdKOaPw" annotatedElement="_wMi7Qqe5EeqcCO4WdKOaPw">
+          <body>Package Category</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7RKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Rae5EeqcCO4WdKOaPw" name="packageName" isOrdered="true" aggregation="composite" association="_wMi7Sqe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi7Rqe5EeqcCO4WdKOaPw" annotatedElement="_wMi7Rae5EeqcCO4WdKOaPw">
+          <body>Package Name</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fHae5EeqcCO4WdKOaPw" annotatedElement="_wMi7Rae5EeqcCO4WdKOaPw">
+          <body>Package Name</body>
+        </ownedComment>
+        <type xmi:type="uml:Class" href="ecore.uml#_wM6H9ae5EeqcCO4WdKOaPw"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7R6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7SKe5EeqcCO4WdKOaPw" name="importerOfRecordNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7Sae5EeqcCO4WdKOaPw" annotatedElement="_wMi7SKe5EeqcCO4WdKOaPw">
+          <body>Importer Of Record Number</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fHqe5EeqcCO4WdKOaPw" annotatedElement="_wMi7SKe5EeqcCO4WdKOaPw">
+          <body>Importer Of Record Number</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi7Sqe5EeqcCO4WdKOaPw" memberEnd="_wMi7Rae5EeqcCO4WdKOaPw _wMi7S6e5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi7S6e5EeqcCO4WdKOaPw" type="_wMi7QKe5EeqcCO4WdKOaPw" association="_wMi7Sqe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_wMi7TKe5EeqcCO4WdKOaPw" name="SubmittedToPortCode">
+      <ownedComment xmi:id="_wMi7Tae5EeqcCO4WdKOaPw" annotatedElement="_wMi7TKe5EeqcCO4WdKOaPw">
+        <body>Schedule D (Domestic) code for the U.S Port to which this document is being submitted</body>
+      </ownedComment>
+      <ownedComment xmi:id="_wM5fH6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7TKe5EeqcCO4WdKOaPw">
+        <body>Schedule D (Domestic) code for the U.S Port to which this document is being submitted</body>
+      </ownedComment>
+      <generalization xmi:id="_wMi7Tqe5EeqcCO4WdKOaPw">
+        <general xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </generalization>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi7T6e5EeqcCO4WdKOaPw" name="TradeTransaction">
+      <ownedAttribute xmi:id="_wMi7UKe5EeqcCO4WdKOaPw" name="transactionCategory" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7Uae5EeqcCO4WdKOaPw" annotatedElement="_wMi7UKe5EeqcCO4WdKOaPw">
+          <body>SINGLE_TXN or CONTINUOUS ('Continous' documents are kept on file and associated with the FILER and not with any particular transaction)</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fIKe5EeqcCO4WdKOaPw" annotatedElement="_wMi7UKe5EeqcCO4WdKOaPw">
+          <body>SINGLE_TXN or CONTINUOUS ('Continous' documents are kept on file and associated with the FILER and not with any particular transaction)</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Uqe5EeqcCO4WdKOaPw" name="entry" type="_wMi7Kqe5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi7dKe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi7U6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7Uqe5EeqcCO4WdKOaPw">
+          <body>Optional - Entry Number or Entry Summary Number that the document in this message is to be associated with. </body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fIae5EeqcCO4WdKOaPw" annotatedElement="_wMi7Uqe5EeqcCO4WdKOaPw">
+          <body>Optional - Entry Number or Entry Summary Number that the document in this message is to be associated with. </body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7VKe5EeqcCO4WdKOaPw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi7Vae5EeqcCO4WdKOaPw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Vqe5EeqcCO4WdKOaPw" name="entrySummary" type="_wMi7I6e5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi7dqe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi7V6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7Vqe5EeqcCO4WdKOaPw">
+          <body>Optional - Entry Number or Entry Summary Number that the document in this message is to be associated with. </body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fIqe5EeqcCO4WdKOaPw" annotatedElement="_wMi7Vqe5EeqcCO4WdKOaPw">
+          <body>Optional - Entry Number or Entry Summary Number that the document in this message is to be associated with. </body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7WKe5EeqcCO4WdKOaPw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi7Wae5EeqcCO4WdKOaPw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Wqe5EeqcCO4WdKOaPw" name="bill" type="_wMi5vqe5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi7eKe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi7W6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7Wqe5EeqcCO4WdKOaPw">
+          <body>Optional - Bill Info that the document in this message is to be associated with. SCAC is required. BillFileDate is optional.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM5fI6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7Wqe5EeqcCO4WdKOaPw">
+          <body>Optional - Bill Info that the document in this message is to be associated with. SCAC is required. BillFileDate is optional.</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7XKe5EeqcCO4WdKOaPw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi7Xae5EeqcCO4WdKOaPw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Xqe5EeqcCO4WdKOaPw" name="iSFNumber" type="_wMi7Nqe5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi7eqe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi7X6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7Xqe5EeqcCO4WdKOaPw">
+          <body>Optional - ISF TransactionNumber that the document in this message is to be associated with.</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM6GEKe5EeqcCO4WdKOaPw" annotatedElement="_wMi7Xqe5EeqcCO4WdKOaPw">
+          <body>Optional - ISF TransactionNumber that the document in this message is to be associated with.</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7YKe5EeqcCO4WdKOaPw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi7Yae5EeqcCO4WdKOaPw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Yqe5EeqcCO4WdKOaPw" name="iTN" type="_wMi7Oae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi7fKe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi7Y6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7Yqe5EeqcCO4WdKOaPw">
+          <body>ITN of Export Data</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM6GEae5EeqcCO4WdKOaPw" annotatedElement="_wMi7Yqe5EeqcCO4WdKOaPw">
+          <body>ITN of Export Data</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7ZKe5EeqcCO4WdKOaPw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi7Zae5EeqcCO4WdKOaPw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7Zqe5EeqcCO4WdKOaPw" name="xTN" type="_wMi7fqe5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi7gqe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi7Z6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7Zqe5EeqcCO4WdKOaPw">
+          <body>XTN of Export Data</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM6GEqe5EeqcCO4WdKOaPw" annotatedElement="_wMi7Zqe5EeqcCO4WdKOaPw">
+          <body>XTN of Export Data</body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7aKe5EeqcCO4WdKOaPw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi7aae5EeqcCO4WdKOaPw" value="*"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7aqe5EeqcCO4WdKOaPw" name="fTZAdmissionNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7a6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7aqe5EeqcCO4WdKOaPw">
+          <body>Foreign Trade Zone Admissions Nbr</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM6GE6e5EeqcCO4WdKOaPw" annotatedElement="_wMi7aqe5EeqcCO4WdKOaPw">
+          <body>Foreign Trade Zone Admissions Nbr</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7bKe5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7bae5EeqcCO4WdKOaPw" name="importerOfRecordNbr" visibility="public" isOrdered="true">
+        <ownedComment xmi:id="_wMi7bqe5EeqcCO4WdKOaPw" annotatedElement="_wMi7bae5EeqcCO4WdKOaPw">
+          <body>Importer of Record Nbr</body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM6GFKe5EeqcCO4WdKOaPw" annotatedElement="_wMi7bae5EeqcCO4WdKOaPw">
+          <body>Importer of Record Nbr</body>
+        </ownedComment>
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7b6e5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7cKe5EeqcCO4WdKOaPw" name="otherTransaction" type="_wMi7Pae5EeqcCO4WdKOaPw" isOrdered="true" aggregation="composite" association="_wMi7hKe5EeqcCO4WdKOaPw">
+        <ownedComment xmi:id="_wMi7cae5EeqcCO4WdKOaPw" annotatedElement="_wMi7cKe5EeqcCO4WdKOaPw">
+          <body>Optional - A Transaction that is not covered by the above options. </body>
+        </ownedComment>
+        <ownedComment xmi:id="_wM6GFae5EeqcCO4WdKOaPw" annotatedElement="_wMi7cKe5EeqcCO4WdKOaPw">
+          <body>Optional - A Transaction that is not covered by the above options. </body>
+        </ownedComment>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7cqe5EeqcCO4WdKOaPw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wMi7c6e5EeqcCO4WdKOaPw" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi7dKe5EeqcCO4WdKOaPw" memberEnd="_wMi7Uqe5EeqcCO4WdKOaPw _wMi7dae5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi7dae5EeqcCO4WdKOaPw" type="_wMi7T6e5EeqcCO4WdKOaPw" association="_wMi7dKe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi7dqe5EeqcCO4WdKOaPw" memberEnd="_wMi7Vqe5EeqcCO4WdKOaPw _wMi7d6e5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi7d6e5EeqcCO4WdKOaPw" type="_wMi7T6e5EeqcCO4WdKOaPw" association="_wMi7dqe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi7eKe5EeqcCO4WdKOaPw" memberEnd="_wMi7Wqe5EeqcCO4WdKOaPw _wMi7eae5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi7eae5EeqcCO4WdKOaPw" type="_wMi7T6e5EeqcCO4WdKOaPw" association="_wMi7eKe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi7eqe5EeqcCO4WdKOaPw" memberEnd="_wMi7Xqe5EeqcCO4WdKOaPw _wMi7e6e5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi7e6e5EeqcCO4WdKOaPw" type="_wMi7T6e5EeqcCO4WdKOaPw" association="_wMi7eqe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi7fKe5EeqcCO4WdKOaPw" memberEnd="_wMi7Yqe5EeqcCO4WdKOaPw _wMi7fae5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi7fae5EeqcCO4WdKOaPw" type="_wMi7T6e5EeqcCO4WdKOaPw" association="_wMi7fKe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wMi7fqe5EeqcCO4WdKOaPw" name="XTNType">
+      <ownedAttribute xmi:id="_wMi7f6e5EeqcCO4WdKOaPw" name="xTN" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_wMi7gKe5EeqcCO4WdKOaPw" name="referenceNumber" visibility="public" isOrdered="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/XMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wMi7gae5EeqcCO4WdKOaPw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi7gqe5EeqcCO4WdKOaPw" memberEnd="_wMi7Zqe5EeqcCO4WdKOaPw _wMi7g6e5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi7g6e5EeqcCO4WdKOaPw" type="_wMi7T6e5EeqcCO4WdKOaPw" association="_wMi7gqe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_wMi7hKe5EeqcCO4WdKOaPw" memberEnd="_wMi7cKe5EeqcCO4WdKOaPw _wMi7hae5EeqcCO4WdKOaPw">
+      <ownedEnd xmi:id="_wMi7hae5EeqcCO4WdKOaPw" type="_wMi7T6e5EeqcCO4WdKOaPw" association="_wMi7hKe5EeqcCO4WdKOaPw"/>
+    </packagedElement>
+    <profileApplication xmi:id="_wMi7hqe5EeqcCO4WdKOaPw">
+      <eAnnotations xmi:id="_wMi7h6e5EeqcCO4WdKOaPw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Ecore.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <Ecore:EPackage xmi:id="_wMi7iKe5EeqcCO4WdKOaPw" base_Package="_wMi5sKe5EeqcCO4WdKOaPw" nsPrefix="dis" basePackage="gov.dhs.cbp"/>
+  <Ecore:EClass xmi:id="_wMi7iae5EeqcCO4WdKOaPw" base_Class="_wMi5sae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_wMi7iqe5EeqcCO4WdKOaPw" xmlName="NameValuePair" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi5s6e5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_wMi7i6e5EeqcCO4WdKOaPw" base_Class="_wMi5tqe5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMi7jKe5EeqcCO4WdKOaPw" xmlName="Bill_._type" base_Class="_wMi5vqe5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMi7jae5EeqcCO4WdKOaPw" base_Class="_wMi5xae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMi7jqe5EeqcCO4WdKOaPw" base_Class="_wMi53Ke5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMjgwKe5EeqcCO4WdKOaPw" base_Class="_wMi55ae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMjgwae5EeqcCO4WdKOaPw" base_Class="_wMi5-ae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_wMjgwqe5EeqcCO4WdKOaPw" xmlName="TradeParties" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6HKe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMjgw6e5EeqcCO4WdKOaPw" xmlName="VehicleAndEngineData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6Iqe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_wMjgxKe5EeqcCO4WdKOaPw" base_Class="_wMi6Jae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_wMjgxae5EeqcCO4WdKOaPw" xmlName="TradeParty" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6Jqe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_wMjgxqe5EeqcCO4WdKOaPw" base_Class="_wMi6Kae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMjgx6e5EeqcCO4WdKOaPw" base_Class="_wMi6OKe5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMjgyKe5EeqcCO4WdKOaPw" base_Class="_wMi6V6e5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_wMjgyae5EeqcCO4WdKOaPw" xmlName="CommodityData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6WKe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_wMjgyqe5EeqcCO4WdKOaPw" base_Class="_wMi6XKe5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMjgy6e5EeqcCO4WdKOaPw" base_Class="_wMi6Zqe5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_wMjgzKe5EeqcCO4WdKOaPw" xmlName="DocumentHeader" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6aKe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMjgzae5EeqcCO4WdKOaPw" xmlName="GovtAgencyList" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6aqe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMjgzqe5EeqcCO4WdKOaPw" xmlName="OptionalData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6cKe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMjgz6e5EeqcCO4WdKOaPw" xmlName="VesselData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6c6e5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMjg0Ke5EeqcCO4WdKOaPw" xmlName="ContactInfo" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6dae5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_wMjg0ae5EeqcCO4WdKOaPw" base_Class="_wMi6eae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMjg0qe5EeqcCO4WdKOaPw" base_Class="_wMi6jqe5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMjg06e5EeqcCO4WdKOaPw" base_Class="_wMi6lKe5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_wMjg1Ke5EeqcCO4WdKOaPw" xmlName="InvoiceData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6lae5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMjg1ae5EeqcCO4WdKOaPw" xmlName="BondData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6mKe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMjg1qe5EeqcCO4WdKOaPw" xmlName="PackingListData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6m6e5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMjg16e5EeqcCO4WdKOaPw" xmlName="CertificateData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6nqe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMjg2Ke5EeqcCO4WdKOaPw" xmlName="PermitData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6oae5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMjg2ae5EeqcCO4WdKOaPw" xmlName="ToxicSubstancesData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6pKe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMjg2qe5EeqcCO4WdKOaPw" xmlName="CommodityList" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6p6e5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMjg26e5EeqcCO4WdKOaPw" xmlName="AdditionalData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6qqe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_wMjg3Ke5EeqcCO4WdKOaPw" base_Class="_wMi6rae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_wMjg3ae5EeqcCO4WdKOaPw" xmlName="InvoiceLineItemData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6s6e5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_wMjg3qe5EeqcCO4WdKOaPw" base_Class="_wMi6t6e5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_wMjg36e5EeqcCO4WdKOaPw" xmlName="CommodityData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi6u6e5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_wMjg4Ke5EeqcCO4WdKOaPw" base_Class="_wMi6xae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMjg4ae5EeqcCO4WdKOaPw" base_Class="_wMi61Ke5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMjg4qe5EeqcCO4WdKOaPw" base_Class="_wMi67ae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMkH0Ke5EeqcCO4WdKOaPw" base_Class="_wMi7AKe5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMkH0ae5EeqcCO4WdKOaPw" xmlName="EntrySummary_._type" base_Class="_wMi7I6e5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMkH0qe5EeqcCO4WdKOaPw" xmlName="Entry_._type" base_Class="_wMi7Kqe5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMkH06e5EeqcCO4WdKOaPw" base_Class="_wMi7Mae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_wMkH1Ke5EeqcCO4WdKOaPw" xmlName="InvoiceLineItemData" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi7Mqe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_wMkH1ae5EeqcCO4WdKOaPw" xmlName="ISFNumber_._type" base_Class="_wMi7Nqe5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMkH1qe5EeqcCO4WdKOaPw" xmlName="ITN_._type" base_Class="_wMi7Oae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMkH16e5EeqcCO4WdKOaPw" xmlName="OtherTransaction_._type" base_Class="_wMi7Pae5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EClass xmi:id="_wMkH2Ke5EeqcCO4WdKOaPw" base_Class="_wMi7QKe5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_wMkH2ae5EeqcCO4WdKOaPw" xmlName="PackageName" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi7Rae5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EDataType xmi:id="_wMkH2qe5EeqcCO4WdKOaPw" instanceClassName="java.lang.String" base_PrimitiveType="_wMi7TKe5EeqcCO4WdKOaPw"/>
+  <Ecore:EClass xmi:id="_wMkH26e5EeqcCO4WdKOaPw" base_Class="_wMi7T6e5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+  <Ecore:EReference xmi:id="_wMkH3Ke5EeqcCO4WdKOaPw" xmlName="Entry" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi7Uqe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMkH3ae5EeqcCO4WdKOaPw" xmlName="EntrySummary" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi7Vqe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMkH3qe5EeqcCO4WdKOaPw" xmlName="Bill" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi7Wqe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMkH36e5EeqcCO4WdKOaPw" xmlName="ISFNumber" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi7Xqe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMkH4Ke5EeqcCO4WdKOaPw" xmlName="ITN" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi7Yqe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMkH4ae5EeqcCO4WdKOaPw" xmlName="XTN" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi7Zqe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EReference xmi:id="_wMkH4qe5EeqcCO4WdKOaPw" xmlName="OtherTransaction" xmlNamespace="http://cbp.dhs.gov/DIS" xmlFeatureKind="Element" base_Property="_wMi7cKe5EeqcCO4WdKOaPw" isResolveProxies="false"/>
+  <Ecore:EClass xmi:id="_wMkH46e5EeqcCO4WdKOaPw" xmlName="XTN_._type" base_Class="_wMi7fqe5EeqcCO4WdKOaPw" xmlContentKind="ElementOnly"/>
+</xmi:XMI>

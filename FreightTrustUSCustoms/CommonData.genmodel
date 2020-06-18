@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/FreightTrustUSCustoms/src" modelPluginID="FreightTrustUSCustoms"
+    modelName="CommonData" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.xsd.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>CommonData.xsd</foreignModel>
+  <genPackages prefix="Dis" basePackage="gov.dhs.cbp" resource="XML" disposableProviderFactory="true"
+      ecorePackage="dis.ecore#/">
+    <genDataTypes ecoreDataType="dis.ecore#//SubmittedToPortCode"/>
+    <genClasses ecoreClass="dis.ecore#//AdditionalData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//AdditionalData/nameValuePair"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//BillType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//BillType/sCAC"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//BillType/billNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//BillType/houseBillNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//BillType/referenceNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//BondData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//BondData/bondName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//BondData/bondNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//BondData/bondType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//BondData/suretyCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//BondData/agentIDNbr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//BondData/filer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//BondData/bondAmount"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//CBPRequest">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CBPRequest/cBPRequestID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CBPRequest/cBPRequestType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CBPRequest/cBPRequestDate"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//CertificateData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CertificateData/certificateNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CertificateData/certificateType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CertificateData/statement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CertificateData/expirationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CertificateData/importerOfRecord"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CertificateData/inspectionLocation"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//CommodityData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CommodityData/entryLineNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CommodityData/hTSNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CommodityData/commodityDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CommodityData/countryOfOrigin"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CommodityData/containerNbr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CommodityData/arrivalDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CommodityData/portOfLading"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CommodityData/portOfUnlading"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CommodityData/portOfEntry"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CommodityData/pPQSignature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CommodityData/sealNumbers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//CommodityData/tradeParties"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//CommodityData/filerReferenceNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//CommodityData/vehicleAndEngineData"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//CommodityList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//CommodityList/commodityData"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//ContactInfoType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//ContactInfoType/pOCInfo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//ContactInfoType/pOCPhoneNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//ContactInfoType/returnEmailAddress"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//DocumentData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//DocumentData/documentHeader"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//DocumentData/govtAgencyList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//DocumentData/comment"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//DocumentData/optionalData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//DocumentData/vesselData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//DocumentData/contactInfo"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//DocumentData/documentObject"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//DocumentHeader">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//DocumentHeader/documentID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//DocumentHeader/documentLabel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//DocumentHeader/completeFileName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//DocumentHeader/fileExtensionType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//DocumentHeader/documentDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//DocumentHeader/documentSentDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//DocumentHeader/docPreviouslySubmitted"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//EntrySummaryType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//EntrySummaryType/entryNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//EntrySummaryType/filer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//EntrySummaryType/entryLineNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//EntrySummaryType/referenceNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//EntryType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//EntryType/entryNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//EntryType/filer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//EntryType/entryLineNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//EntryType/referenceNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//GovtAgencyList">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//GovtAgencyList/govtAgency"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//InvoiceData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//InvoiceData/invoiceNbr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//InvoiceData/invoiceType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//InvoiceData/invoiceLineItemData"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//InvoiceLineItemData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//InvoiceLineItemData/invoiceLineNbr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//InvoiceLineItemData/commodityData"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//InvoiceLineItemList">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//InvoiceLineItemList/invoiceLineItemData"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//ISFNumberType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//ISFNumberType/filer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//ISFNumberType/iSFNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//ITNType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//ITNType/iTN"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//ITNType/referenceNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//NameValuePair">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//NameValuePair/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//NameValuePair/value"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//OptionalData">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//OptionalData/invoiceData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//OptionalData/bondData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//OptionalData/packingListData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//OptionalData/certificateData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//OptionalData/permitData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//OptionalData/toxicSubstancesData"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//OptionalData/commodityList"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//OptionalData/additionalData"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//OtherTransactionType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//OtherTransactionType/transactionName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//OtherTransactionType/transactionNumber"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//PackageIdentifierType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//PackageIdentifierType/packageCategory"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//PackageIdentifierType/packageName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//PackageIdentifierType/importerOfRecordNbr"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//PackingListData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//PackingListData/packingListNbr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//PackingListData/invoiceNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//PackingListData/purchaseOrderNbr"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//PermitData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//PermitData/permitNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//PermitData/permitType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//PermitData/approvalNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//PermitData/statement"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//PermitData/startDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//PermitData/endDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//PermitData/importerOfRecord"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//ToxicSubstancesData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//ToxicSubstancesData/cASNbr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//ToxicSubstancesData/ePARegistrationNbr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//ToxicSubstancesData/ePAProducerEstNbr"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//TradeParties">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//TradeParties/tradeParty"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//TradePartyInfo">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//TradePartyInfo/tradePartyID"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//TradePartyInfo/tradePartyType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//TradePartyInfo/tradePartyName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//TradePartyInfo/tradePartyAddress"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//TradeTransaction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//TradeTransaction/transactionCategory"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//TradeTransaction/entry"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//TradeTransaction/entrySummary"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//TradeTransaction/bill"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//TradeTransaction/iSFNumber"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//TradeTransaction/iTN"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//TradeTransaction/xTN"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//TradeTransaction/fTZAdmissionNbr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//TradeTransaction/importerOfRecordNbr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference dis.ecore#//TradeTransaction/otherTransaction"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//VehicleAndEngineData">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VehicleAndEngineData/vIN"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VehicleAndEngineData/vehicleManufacturer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VehicleAndEngineData/vehicleModel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VehicleAndEngineData/vehicleSerialNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VehicleAndEngineData/vehicleManufactureDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VehicleAndEngineData/engineManufacturer"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VehicleAndEngineData/engineModel"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VehicleAndEngineData/engineSerialNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VehicleAndEngineData/engineManufactureDate"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//VesselDataType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VesselDataType/carrierSCAC"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VesselDataType/licensePermitNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VesselDataType/certificateNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VesselDataType/issueDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VesselDataType/expirationDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VesselDataType/grossTonnage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VesselDataType/netTonnage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VesselDataType/vesselVoyageNumber"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VesselDataType/vesselVoyageSegmentNbr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//VesselDataType/vesselInspectionID"/>
+    </genClasses>
+    <genClasses ecoreClass="dis.ecore#//XTNType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//XTNType/xTN"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute dis.ecore#//XTNType/referenceNumber"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

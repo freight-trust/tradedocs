@@ -1,0 +1,21 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.freighttrust.com/schema/universal/2020/06" version="1.1">
+  <xs:include schemaLocation="UniversalCommon.xsd"></xs:include>
+
+  <xs:element name="UniversalTransactionBatchRequest" type="UniversalTransactionBatchRequestData"></xs:element>
+
+  <xs:complexType name="UniversalTransactionBatchRequestData">
+    <xs:all>
+      <xs:element name="TransactionBatchRequest" type="TransactionBatchRequest"></xs:element>
+    </xs:all>
+    <xs:attribute name="version" type="xs:token"></xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="TransactionBatchRequest">
+    <xs:all>
+      <xs:element minOccurs="0" name="DataContext" type="DataContext"></xs:element>
+
+      <xs:element minOccurs="1" name="ActionType" type="CodeDescriptionPair"></xs:element>
+    </xs:all>
+  </xs:complexType>
+
+</xs:schema>

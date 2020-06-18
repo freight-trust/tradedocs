@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated CommonData -->
+      <package
+            uri="http://cbp.dhs.gov/DIS"
+            class="gov.dhs.cbp.dis.DisPackage"
+            genModel="CommonData.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated CommonData -->
+      <parser
+            type="dis"
+            class="gov.dhs.cbp.dis.util.DisResourceFactoryImpl"/>
+   </extension>
+
+</plugin>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <schemaSystemId>file:/Users/sbacha/Documents/tradedocs-tdoc/MX-CUSTOMS/PIDEMENTO/ucm195816/objetosSimples.xsd</schemaSystemId>
+    <documentRoot>recibePedimento</documentRoot>
+    <outputFolder>/Users/sbacha/Documents/tradedocs-tdoc/MX-CUSTOMS/PIDEMENTO/ucm195816</outputFolder>
+    <filenamePrefix>rPedimento</filenamePrefix>
+    <filenameExtension>xml</filenameExtension>
+    <noOfInstances>1</noOfInstances>
+    <openFirstInstance>true</openFirstInstance>
+    <defaultNamespace>http://privados.recintos.ws</defaultNamespace>
+    <valuesMaxLength>30</valuesMaxLength>
+    <isUseIncrementalNamesForValues>true</isUseIncrementalNamesForValues>
+    <discardOptionalElementsAfterNestedLevel>6</discardOptionalElementsAfterNestedLevel>
+    <namespaceMapping ns="http://privados.recintos.ws" proxy="tns"/>
+    <element namespace="&lt;ANY>" name="&lt;ANY>">
+        <generateOptionalElements>false</generateOptionalElements>
+        <generateOptionalAttributes>false</generateOptionalAttributes>
+        <valuesForContentType>DEFAULT</valuesForContentType>
+        <preferredNumberOfRepetitions>2</preferredNumberOfRepetitions>
+        <maximumRecursivityLevel>1</maximumRecursivityLevel>
+        <alternativeStrategy>FIRST</alternativeStrategy>
+        <choicesAndSubstitutions strategy="RANDOM" generateOthersAsComments="false"/>
+        <attribute namespace="&lt;ANY>" name="&lt;ANY>">
+        </attribute>
+    </element>
+</settings>
