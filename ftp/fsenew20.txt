@@ -1,0 +1,36 @@
+This publication of Treasury's Office of Foreign Assets Control
+("OFAC") is designed as a reference tool providing actual notice of
+actions by OFAC with respect to the List of Foreign Sanctions
+Evaders (the "FSE List"),   to assist the public in complying with
+the various sanctions programs administered by OFAC. The latest
+changes may appear here prior to their publication in the Federal
+Register, and it is intended that users rely on changes indicated
+in this document that post-date the most recent Federal Register
+publication. Such changes reflect official actions of OFAC, and 
+will be reflected as soon as practicable in the Federal Register
+under the index heading  "Foreign Assets Control."  New Federal
+Register notices with regard to the FSE List may be published at
+any time.  Users are advised to check the Federal Register and this
+electronic publication routinely for additional names or other
+changes to the listings. The following changes have occurred with
+respect to the Office of Foreign Assets Control FSE List since
+January 1, 2020:
+
+03/17/20:
+
+The following [FSE-SY] [SYRIA] entries have been removed: 
+
+BLUE MARINE SHIPPING AGENCY S.A. (a.k.a. BLUEMARINE AG; a.k.a.
+BLUEMARINE LTD; a.k.a. BLUEMARINE SA), Lindenstrasse 2, Baar 6340,
+Switzerland [SYRIA] [FSE-SY].
+BLUEMARINE AG (a.k.a. BLUE MARINE SHIPPING AGENCY S.A.; a.k.a.
+BLUEMARINE LTD; a.k.a. BLUEMARINE SA), Lindenstrasse 2, Baar 6340,
+Switzerland [SYRIA] [FSE-SY].
+BLUEMARINE LTD (a.k.a. BLUE MARINE SHIPPING AGENCY S.A.; a.k.a.
+BLUEMARINE AG; a.k.a. BLUEMARINE SA), Lindenstrasse 2, Baar 6340,
+Switzerland [SYRIA] [FSE-SY].
+BLUEMARINE SA (a.k.a. BLUE MARINE SHIPPING AGENCY S.A.; a.k.a.
+BLUEMARINE AG; a.k.a. BLUEMARINE LTD), Lindenstrasse 2, Baar 6340,
+Switzerland [SYRIA] [FSE-SY].
+
+

@@ -1,0 +1,578 @@
+This publication of Treasury's Office of Foreign Assets Control
+("OFAC") is a reference tool providing actual notice of actions by
+OFAC with respect to persons that are identified as members of the
+Palestinian Legislative Council (PLC) who were elected on the party
+slate of a Foreign Terrorist Organization (FTO), Specially
+Designated Terrorist (SDT), or Specially Designated Global
+Terrorist (SDGT).
+
+The latest changes may appear here prior to their publication in
+the Federal Register, and it is intended that users rely on changes
+indicated in this document.  Such changes reflect official actions
+of OFAC, and will be reflected as soon as practicable in the
+Federal Register under the index heading "Foreign Assets Control." 
+New Federal Register notices with regard
+to identifications made may be published at any time.  Users are
+advised to check the Federal Register and this electronic
+publication routinely for additional names or other changes to the
+listings. 
+
+The PLC List is not part of the Specially Designated Nationals and
+Blocked Persons (SDN) List.  United States financial institutions
+must reject transactions involving these individuals on the PLC
+List, provided that any such individuals are not also named on
+OFAC's SDN List. OFAC has created the program code [NS-PLC] for
+these individuals. The prefix "NS" stands for "non-SDN".
+
+Persons on the PLC List whose property and interests in property
+are blocked will also appear on OFAC's SDN list with program tags
+for relevant blocking authorities.
+
+_________________________________
+
+ABDEL JAWAD, Nasir Abdullah Odeh (a.k.a. ABDUL JAWAD, Naser); DOB
+1965; HAMAS - Salfit (individual) [NS-PLC].
+
+ABDUL JAWAD, Naser (a.k.a. ABDEL JAWAD, Nasir Abdullah Odeh); DOB
+1965; HAMAS - Salfit (individual) [NS-PLC].
+
+ABDUL RAHMAN, Wael Muhammed (a.k.a. ABED AL RAHMAAN, Wael Mohamad;
+a.k.a. AL-HUSSEINI, Wael); DOB 1962; HAMAS - Jerusalem (individual)
+[NS-PLC].
+
+ABED AL RAHMAAN, Wael Mohamad (a.k.a. ABDUL RAHMAN, Wael Muhammed;
+a.k.a. AL-HUSSEINI, Wael); DOB 1962; HAMAS - Jerusalem (individual)
+[NS-PLC].
+
+ABOU HASSAN, Khaled Suleiman Fayez (a.k.a. ABU HASAN, Khalid
+Sulayman Fayiz; a.k.a. ABU HASSAN, Khaled); DOB 1967; HAMAS - Jenin
+(individual) [NS-PLC].
+
+ABOU RAAS, Merwan Muhammed (a.k.a. ABU RAS, Marwan Mohammed), Gaza
+City, Gaza, Palestinian; DOB 1958 (individual) [NS-PLC].
+
+ABOU SALEM, Ibrahim Said Hasan (a.k.a. ABU SALEM, Ibrahim); DOB
+1948; HAMAS - Jerusalem (individual) [NS-PLC].
+
+ABOU TAYR, Mohammad Mahmoud (a.k.a. ABU TAIR, Mohammed Mahmud;
+a.k.a. ABU TEIR, Mohammed); DOB 1951; POB Umm Tuba (individual)
+[NS-PLC].
+
+ABU ANED, Hadj Hatem (a.k.a. KAFEESHEH, Hatem Rabah; a.k.a.
+QEFEISHA, Hatem; a.k.a. QFEISHEH, Hatem); DOB 1960; HAMAS - Hebron
+(individual) [NS-PLC].
+
+ABU HALABIYYE, Ahmad Yousef, Gaza City, Gaza, Palestinian; DOB 1952
+(individual) [NS-PLC].
+
+ABU HASAN, Khalid Sulayman Fayiz (a.k.a. ABOU HASSAN, Khaled
+Suleiman Fayez; a.k.a. ABU HASSAN, Khaled); DOB 1967; HAMAS - Jenin
+(individual) [NS-PLC].
+
+ABU HASSAN, Khaled (a.k.a. ABOU HASSAN, Khaled Suleiman Fayez;
+a.k.a. ABU HASAN, Khalid Sulayman Fayiz); DOB 1967; HAMAS - Jenin
+(individual) [NS-PLC].
+
+ABU JEHEISHA, Mohammed (a.k.a. ABU JHEISHEH, Mohammed; a.k.a. ABU
+JHESHEH, Mohammad Mutlaq); DOB 1955; POB Izna, Hebron; HAMAS -
+Hebron (individual) [NS-PLC].
+
+ABU JHEISHEH, Mohammed (a.k.a. ABU JEHEISHA, Mohammed; a.k.a. ABU
+JHESHEH, Mohammad Mutlaq); DOB 1955; POB Izna, Hebron; HAMAS -
+Hebron (individual) [NS-PLC].
+
+ABU JHESHEH, Mohammad Mutlaq (a.k.a. ABU JEHEISHA, Mohammed; a.k.a.
+ABU JHEISHEH, Mohammed); DOB 1955; POB Izna, Hebron; HAMAS - Hebron
+(individual) [NS-PLC].
+
+ABU MSAMEH, Sayyed Salem (a.k.a. ABU MUSAMEH, Sayed Salem), Rafah,
+West Bank, Palestinian; DOB 1948 (individual) [NS-PLC].
+
+ABU MUSAMEH, Sayed Salem (a.k.a. ABU MSAMEH, Sayyed Salem), Rafah,
+West Bank, Palestinian; DOB 1948 (individual) [NS-PLC].
+
+ABU QOUS, Khalid Hamad Hamid (a.k.a. ABU TOS, Khaled); DOB 1949;
+POB Tulkarem, West Bank; HAMAS - Toubas (individual) [NS-PLC].
+
+ABU RAS, Marwan Mohammed (a.k.a. ABOU RAAS, Merwan Muhammed), Gaza
+City, Gaza, Palestinian; DOB 1958 (individual) [NS-PLC].
+
+ABU SAIR, Da'oud Kamal Da'oud (a.k.a. ABU SEIR, Daoud); DOB 1955;
+HAMAS - Hebron (individual) [NS-PLC].
+
+ABU SALEM, Ibrahim (a.k.a. ABOU SALEM, Ibrahim Said Hasan); DOB
+1948; HAMAS - Jerusalem (individual) [NS-PLC].
+
+ABU SEIR, Daoud (a.k.a. ABU SAIR, Da'oud Kamal Da'oud); DOB 1955;
+HAMAS - Hebron (individual) [NS-PLC].
+
+ABU TAIR, Mohammed Mahmud (a.k.a. ABOU TAYR, Mohammad Mahmoud;
+a.k.a. ABU TEIR, Mohammed); DOB 1951; POB Umm Tuba (individual)
+[NS-PLC].
+
+ABU TEIR, Mohammed (a.k.a. ABOU TAYR, Mohammad Mahmoud; a.k.a. ABU
+TAIR, Mohammed Mahmud); DOB 1951; POB Umm Tuba (individual) [NS-
+PLC].
+
+ABU TOS, Khaled (a.k.a. ABU QOUS, Khalid Hamad Hamid); DOB 1949;
+POB Tulkarem, West Bank; HAMAS - Toubas (individual) [NS-PLC].
+
+ADWAN, Atef Ibrahim (a.k.a. IDWAN, Atef Ibrahim Mohammad; a.k.a.
+UDWAN, Atef); DOB 1952; HAMAS - Northern Gaza (individual) [NS-
+PLC].
+
+AHMAD, Ahmad Ali (a.k.a. AHMAD, Ahmad Ali Ahmad); DOB 1940; HAMAS -
+Nablus (individual) [NS-PLC].
+
+AHMAD, Ahmad Ali Ahmad (a.k.a. AHMAD, Ahmad Ali); DOB 1940; HAMAS -
+Nablus (individual) [NS-PLC].
+
+AL NATSHEH, Mohammed (a.k.a. ALA AL DIN, Mohamad Nouman; a.k.a.
+NU'MAN ALAEDDIN, Mohammed Jamal), Hebron, West Bank, Palestinian;
+DOB 1959 (individual) [NS-PLC].
+
+AL QRENAWI, Houda Naim (a.k.a. AL-QREINAWI, Huda Naim), Gaza,
+Palestinian; DOB 1969 (individual) [NS-PLC].
+
+AL SHANTEE, Jamila Abed Allah (a.k.a. AL-SHANTI, Jamileh Abdullah;
+a.k.a. EL-SHANTI, Jameela Abdallah), Gaza, Palestinian; DOB 1955;
+POB Jabalia Camp (individual) [NS-PLC].
+
+AL ZAHAR, Mahmoud Khaled (a.k.a. ZAHHAR, Mahmoud Khaled); DOB 1945
+(individual) [NS-PLC].
+
+ALA AL DIN, Mohamad Nouman (a.k.a. AL NATSHEH, Mohammed; a.k.a.
+NU'MAN ALAEDDIN, Mohammed Jamal), Hebron, West Bank, Palestinian;
+DOB 1959 (individual) [NS-PLC].
+
+AL-ABADSAH, Yahia Abdul Aziz (a.k.a. EL ABADSA, Yehia Abdul Aziz),
+Khan Younis, West Bank, Palestinian; DOB 1958 (individual) [NS-
+PLC].
+
+AL-ALASHQAR, Ismail Abdallatif (a.k.a. AL-ASHQAR, Ismail); DOB
+1962; HAMAS - Northern Gaza (individual) [NS-PLC].
+
+AL-ASHQAR, Ismail (a.k.a. AL-ALASHQAR, Ismail Abdallatif); DOB
+1962; HAMAS - Northern Gaza (individual) [NS-PLC].
+
+AL-ASTAL, Younes (a.k.a. EL-ASTAL, Younis Mohe-eldeen Fayez); DOB
+1956; POB Khan Younis; HAMAS - Khan Younis (individual) [NS-PLC].
+
+AL-BARDAWIL, Salah (a.k.a. EL BARDAWIL, Salah Mohammad); DOB 1959;
+POB Khan Younis; HAMAS - Khan Younis (individual) [NS-PLC].
+
+AL-GHOUL, Mohammed Faraj (a.k.a. ELGHOUL, Mohammad Faraj Mahmood);
+DOB 1957; HAMAS - Gaza (individual) [NS-PLC].
+
+AL-HABAL, Mushir (a.k.a. ELHABEL, Moshir Omar; a.k.a. EL-MASRI,
+Moshir); DOB 1978; HAMAS - Northern Gaza (individual) [NS-PLC].
+
+AL-HAYYEH, Khalil (a.k.a. ELHYYA, Khalil Esmaeel); DOB 1960; HAMAS
+- Gaza (individual) [NS-PLC].
+
+AL-HUSSEINI, Wael (a.k.a. ABDUL RAHMAN, Wael Muhammed; a.k.a. ABED
+AL RAHMAAN, Wael Mohamad); DOB 1962; HAMAS - Jerusalem (individual)
+[NS-PLC].
+
+AL-JAMAL, Abdel Al-Rahman Yusef (a.k.a. AL-JAMAL, Abdul Rahman);
+DOB 1961; HAMAS - Der al-Balah (individual) [NS-PLC].
+
+AL-JAMAL, Abdul Rahman (a.k.a. AL-JAMAL, Abdel Al-Rahman Yusef);
+DOB 1961; HAMAS - Der al-Balah (individual) [NS-PLC].
+
+AL-KHATIB, Mahmoud (a.k.a. AL-KHATIB, Mahmoud Daoud Mahmoud); DOB
+1972; HAMAS - Bethlehem (individual) [NS-PLC].
+
+AL-KHATIB, Mahmoud Daoud Mahmoud (a.k.a. AL-KHATIB, Mahmoud); DOB
+1972; HAMAS - Bethlehem (individual) [NS-PLC].
+
+AL-QADI, Sameer Saleh (a.k.a. AL-QADI, Samir); DOB 1956; HAMAS -
+Hebron (individual) [NS-PLC].
+
+AL-QADI, Samir (a.k.a. AL-QADI, Sameer Saleh); DOB 1956; HAMAS -
+Hebron (individual) [NS-PLC].
+
+AL-QREINAWI, Huda Naim (a.k.a. AL QRENAWI, Houda Naim), Gaza,
+Palestinian; DOB 1969 (individual) [NS-PLC].
+
+AL-RAMAHI, Mahmoud Ahmad, Ramallah, West Bank, Palestinian; DOB
+1963 (individual) [NS-PLC].
+
+AL-SEDAWI, Riyad Radad (a.k.a. RADAD, Riyad Mahmoud Sa'eed; a.k.a.
+RADDAD, Riyad); DOB 1960; HAMAS - Tulkarem (individual) [NS-PLC].
+
+AL-SHANTI, Jamileh Abdullah (a.k.a. AL SHANTEE, Jamila Abed Allah;
+a.k.a. EL-SHANTI, Jameela Abdallah), Gaza, Palestinian; DOB 1955;
+POB Jabalia Camp (individual) [NS-PLC].
+
+AL-SHARAFI, Yousef (a.k.a. AL-SHRAFI, Yousef Awad); DOB 1963; HAMAS
+- Northern Gaza (individual) [NS-PLC].
+
+AL-SHRAFI, Yousef Awad (a.k.a. AL-SHARAFI, Yousef); DOB 1963; HAMAS
+- Northern Gaza (individual) [NS-PLC].
+
+AL-TAL, Mohammad Ismail (a.k.a. AL-TAL, Mohammed); DOB 1965; HAMAS
+- Hebron (individual) [NS-PLC].
+
+AL-TAL, Mohammed (a.k.a. AL-TAL, Mohammad Ismail); DOB 1965; HAMAS
+- Hebron (individual) [NS-PLC].
+
+AL-ZBOUN, Anwar Muhammad (a.k.a. ZBOUN, Anwar Mohammed), Bethlehem,
+West Bank, Palestinian; DOB 1968; POB Ilar (individual) [NS-PLC].
+
+AMLI, Riyad Ali (a.k.a. AMLI, Riyad Ali Mustafa); DOB 1961; HAMAS -
+Nablus (individual) [NS-PLC].
+
+AMLI, Riyad Ali Mustafa (a.k.a. AMLI, Riyad Ali); DOB 1961; HAMAS -
+Nablus (individual) [NS-PLC].
+
+ATOON, Ahmed Muhamad Ahmed (a.k.a. ATTOUN, Ahmad; a.k.a. ATTOUN,
+Ahmad Mohammad Ahmad); DOB 1968; HAMAS - Jerusalem (individual)
+[NS-PLC].
+
+ATTOUN, Ahmad (a.k.a. ATOON, Ahmed Muhamad Ahmed; a.k.a. ATTOUN,
+Ahmad Mohammad Ahmad); DOB 1968; HAMAS - Jerusalem (individual)
+[NS-PLC].
+
+ATTOUN, Ahmad Mohammad Ahmad (a.k.a. ATOON, Ahmed Muhamad Ahmed;
+a.k.a. ATTOUN, Ahmad); DOB 1968; HAMAS - Jerusalem (individual)
+[NS-PLC].
+
+BADER, Mohammed Maher Yousef, Hebron, West Bank, Palestinian; DOB
+1956 (individual) [NS-PLC].
+
+BAHAR, Ahmad (a.k.a. BAHAR, Ahmed Mohamed); DOB 1949; POB Gaza;
+HAMAS - Gaza (individual) [NS-PLC].
+
+BAHAR, Ahmed Mohamed (a.k.a. BAHAR, Ahmad); DOB 1949; POB Gaza;
+HAMAS - Gaza (individual) [NS-PLC].
+
+DAHBOUR, Ibrahim Mohammed, Jenin, West Bank, Palestinian; DOB 1968
+(individual) [NS-PLC].
+
+DAR KHALIL, Hasan Youssef Daoud (a.k.a. DAR KHALIL, Hassan Yousef
+Dawoud; a.k.a. YOUSEF, Hasan); HAMAS - Ramallah (individual) [NS-
+PLC].
+
+DAR KHALIL, Hassan Yousef Dawoud (a.k.a. DAR KHALIL, Hasan Youssef
+Daoud; a.k.a. YOUSEF, Hasan); HAMAS - Ramallah (individual) [NS-
+PLC].
+
+DARAGHMEH, Ayman Hussein, Tubas, West Bank, Palestinian; DOB 1963
+(individual) [NS-PLC].
+
+DWAIK, Aziz Salem Mustada (a.k.a. DWEIK, Aziz); DOB 1948; POB Al-
+Khalil, Hebron; HAMAS - Hebron (individual) [NS-PLC].
+
+DWEIB, Khaled Tafesh (a.k.a. THOUAIB, Khaled Ibrahim Tafish; a.k.a.
+THWEIB, Khaled Tafish); DOB 1964; POB Bethlehem; HAMAS - Bethlehem
+(individual) [NS-PLC].
+
+DWEIK, Aziz (a.k.a. DWAIK, Aziz Salem Mustada); DOB 1948; POB Al-
+Khalil, Hebron; HAMAS - Hebron (individual) [NS-PLC].
+
+EL ABADSA, Yehia Abdul Aziz (a.k.a. AL-ABADSAH, Yahia Abdul Aziz),
+Khan Younis, West Bank, Palestinian; DOB 1958 (individual) [NS-
+PLC].
+
+EL BARDAWIL, Salah Mohammad (a.k.a. AL-BARDAWIL, Salah); DOB 1959;
+POB Khan Younis; HAMAS - Khan Younis (individual) [NS-PLC].
+
+EL-ASTAL, Younis Mohe-eldeen Fayez (a.k.a. AL-ASTAL, Younes); DOB
+1956; POB Khan Younis; HAMAS - Khan Younis (individual) [NS-PLC].
+
+ELGHOUL, Mohammad Faraj Mahmood (a.k.a. AL-GHOUL, Mohammed Faraj);
+DOB 1957; HAMAS - Gaza (individual) [NS-PLC].
+
+ELHABEL, Moshir Omar (a.k.a. AL-HABAL, Mushir; a.k.a. EL-MASRI,
+Moshir); DOB 1978; HAMAS - Northern Gaza (individual) [NS-PLC].
+
+ELHYYA, Khalil Esmaeel (a.k.a. AL-HAYYEH, Khalil); DOB 1960; HAMAS
+- Gaza (individual) [NS-PLC].
+
+EL-MASRI, Moshir (a.k.a. AL-HABAL, Mushir; a.k.a. ELHABEL, Moshir
+Omar); DOB 1978; HAMAS - Northern Gaza (individual) [NS-PLC].
+
+EL-SHANTI, Jameela Abdallah (a.k.a. AL SHANTEE, Jamila Abed Allah;
+a.k.a. AL-SHANTI, Jamileh Abdullah), Gaza, Palestinian; DOB 1955;
+POB Jabalia Camp (individual) [NS-PLC].
+
+FARHAT, Mariam Mohammed, Gaza, Palestinian; DOB 1949 (individual)
+[NS-PLC].
+
+FUQAHA, Abdul Jaber Mustafa, Ramallah, West Bank, Palestinian; DOB
+1966 (individual) [NS-PLC].
+
+HALAYQA, Sameera Abed Allah (a.k.a. HALAYQAH, Samira Abdullah),
+Hebron, West Bank, Palestinian; DOB 1964 (individual) [NS-PLC].
+
+HALAYQAH, Samira Abdullah (a.k.a. HALAYQA, Sameera Abed Allah),
+Hebron, West Bank, Palestinian; DOB 1964 (individual) [NS-PLC].
+
+HAMAD, Fathi (a.k.a. HAMAD, Fathy Ahmed; a.k.a. HAMMAD, Fathi
+Ahmad; a.k.a. HAMMAD, Fathi Ahmad Mohammad), Jabaliya, Gaza; DOB
+1961; POB Jabaliya, Gaza Strip (individual) [SDGT] [NS-PLC].
+
+HAMAD, Fathy Ahmed (a.k.a. HAMAD, Fathi; a.k.a. HAMMAD, Fathi
+Ahmad; a.k.a. HAMMAD, Fathi Ahmad Mohammad), Jabaliya, Gaza; DOB
+1961; POB Jabaliya, Gaza Strip (individual) [SDGT] [NS-PLC].
+
+HAMDAN, Fadel (a.k.a. HAMDAN, Fadel Mohammad Saleh); DOB 1953; POB
+Ramallah, West Bank; HAMAS - Ramallah (individual) [NS-PLC].
+
+HAMDAN, Fadel Mohammad Saleh (a.k.a. HAMDAN, Fadel); DOB 1953; POB
+Ramallah, West Bank; HAMAS - Ramallah (individual) [NS-PLC].
+
+HAMMAD, Fathi Ahmad (a.k.a. HAMAD, Fathi; a.k.a. HAMAD, Fathy
+Ahmed; a.k.a. HAMMAD, Fathi Ahmad Mohammad), Jabaliya, Gaza; DOB
+1961; POB Jabaliya, Gaza Strip (individual) [SDGT] [NS-PLC].
+
+HAMMAD, Fathi Ahmad Mohammad (a.k.a. HAMAD, Fathi; a.k.a. HAMAD,
+Fathy Ahmed; a.k.a. HAMMAD, Fathi Ahmad), Jabaliya, Gaza; DOB 1961;
+POB Jabaliya, Gaza Strip (individual) [SDGT] [NS-PLC].
+
+HANIYA, Ismail (a.k.a. HANIYA, Ismail Abdul Salah; a.k.a. HANIYYA,
+Ismaeel); DOB 1962; POB Shati (individual) [NS-PLC].
+
+HANIYA, Ismail Abdul Salah (a.k.a. HANIYA, Ismail; a.k.a. HANIYYA,
+Ismaeel); DOB 1962; POB Shati (individual) [NS-PLC].
+
+HANIYYA, Ismaeel (a.k.a. HANIYA, Ismail; a.k.a. HANIYA, Ismail
+Abdul Salah); DOB 1962; POB Shati (individual) [NS-PLC].
+
+HASAN DOUKHAN, Abdul Fattah (a.k.a. HASAN DUKHAN, Abdul Fattah);
+DOB 1936 (individual) [NS-PLC].
+
+HASAN DUKHAN, Abdul Fattah (a.k.a. HASAN DOUKHAN, Abdul Fattah);
+DOB 1936 (individual) [NS-PLC].
+
+IDWAN, Atef Ibrahim Mohammad (a.k.a. ADWAN, Atef Ibrahim; a.k.a.
+UDWAN, Atef); DOB 1952; HAMAS - Northern Gaza (individual) [NS-
+PLC].
+
+ISKEIK, Jamal Ismail, Gaza, Palestinian; DOB 1964 (individual) [NS-
+PLC].
+
+JARRAR, Khaledah; PFLP (individual) [NS-PLC].
+
+KAFEESHEH, Hatem Rabah (a.k.a. ABU ANED, Hadj Hatem; a.k.a.
+QEFEISHA, Hatem; a.k.a. QFEISHEH, Hatem); DOB 1960; HAMAS - Hebron
+(individual) [NS-PLC].
+
+KARIM, Qais Abdul; DFLP (individual) [NS-PLC].
+
+KHUDAIR, Hamid Jabir (a.k.a. KHUDAIR, Hamid Sulieman Jabir); DOB
+1944; HAMAS - Nablus (individual) [NS-PLC].
+
+KHUDAIR, Hamid Sulieman Jabir (a.k.a. KHUDAIR, Hamid Jabir); DOB
+1944; HAMAS - Nablus (individual) [NS-PLC].
+
+MAJDALAWI, Jamil; PFLP (individual) [NS-PLC].
+
+MANSOUR, Muna Salem (a.k.a. MANSOUR, Muna Salim Saleh), Nablus,
+West Bank, Palestinian; DOB 1961 (individual) [NS-PLC].
+
+MANSOUR, Muna Salim Saleh (a.k.a. MANSOUR, Muna Salem), Nablus,
+West Bank, Palestinian; DOB 1961 (individual) [NS-PLC].
+
+MANSOUR, Yasser Daoud; DOB 1967; POB Nablus, West Bank (individual)
+[NS-PLC].
+
+MATAR, Omar Mahmoud, Salfit, West Bank, Palestinian; DOB 1958
+(individual) [NS-PLC].
+
+MUBARAK, Ahmad 'Abd al-Aziz (a.k.a. MUBARAK, Ahmad Abdel Aziz
+Saleh); DOB 1962; HAMAS - Ramallah (individual) [NS-PLC].
+
+MUBARAK, Ahmad Abdel Aziz Saleh (a.k.a. MUBARAK, Ahmad 'Abd al-
+Aziz); DOB 1962; HAMAS - Ramallah (individual) [NS-PLC].
+
+MUSLEH, Mahmoud (a.k.a. MUSLEH, Mahmoud Ibrahim Mahmoud); DOB 1941;
+POB Haifa, Israel; HAMAS - Ramallah (individual) [NS-PLC].
+
+MUSLEH, Mahmoud Ibrahim Mahmoud (a.k.a. MUSLEH, Mahmoud); DOB 1941;
+POB Haifa, Israel; HAMAS - Ramallah (individual) [NS-PLC].
+
+NAJJAR, Khamis (a.k.a. NAJJAR, Khamis Jawdat Khamis); DOB 1949; POB
+Khan Younis; HAMAS - Khan Younis (individual) [NS-PLC].
+
+NAJJAR, Khamis Jawdat Khamis (a.k.a. NAJJAR, Khamis); DOB 1949; POB
+Khan Younis; HAMAS - Khan Younis (individual) [NS-PLC].
+
+NASSER, Jamal Talab Mohammad Saleh (a.k.a. SALEH, Jamal; a.k.a.
+SALEH, Jamal Talab); DOB 1958; POB Gaza; HAMAS - Gaza (individual)
+[NS-PLC].
+
+NAWFAL, Imad Mahmoud (a.k.a. NOFAL, Imad Mahmoud), Qalqilya, West
+Bank, Palestinian; DOB 1970 (individual) [NS-PLC].
+
+NOFAL, Imad Mahmoud (a.k.a. NAWFAL, Imad Mahmoud), Qalqilya, West
+Bank, Palestinian; DOB 1970 (individual) [NS-PLC].
+
+NU'MAN ALAEDDIN, Mohammed Jamal (a.k.a. AL NATSHEH, Mohammed;
+a.k.a. ALA AL DIN, Mohamad Nouman), Hebron, West Bank, Palestinian;
+DOB 1959 (individual) [NS-PLC].
+
+QAR'AWI, Fathi Mohammed (a.k.a. QARAWI, Mohammed Fathi), Tulkarim,
+West Bank, Palestinian; DOB 1958; POB Ramin, West Bank (individual)
+[NS-PLC].
+
+QARAWI, Mohammed Fathi (a.k.a. QAR'AWI, Fathi Mohammed), Tulkarim,
+West Bank, Palestinian; DOB 1958; POB Ramin, West Bank (individual)
+[NS-PLC].
+
+QEFEISHA, Hatem (a.k.a. ABU ANED, Hadj Hatem; a.k.a. KAFEESHEH,
+Hatem Rabah; a.k.a. QFEISHEH, Hatem); DOB 1960; HAMAS - Hebron
+(individual) [NS-PLC].
+
+QFEISHEH, Hatem (a.k.a. ABU ANED, Hadj Hatem; a.k.a. KAFEESHEH,
+Hatem Rabah; a.k.a. QEFEISHA, Hatem); DOB 1960; HAMAS - Hebron
+(individual) [NS-PLC].
+
+RABAI, Khalil Musa (a.k.a. RABBAI, Khalil Mussa); DOB 1959
+(individual) [NS-PLC].
+
+RABBAI, Khalil Mussa (a.k.a. RABAI, Khalil Musa); DOB 1959
+(individual) [NS-PLC].
+
+RADAD, Riyad Mahmoud Sa'eed (a.k.a. AL-SEDAWI, Riyad Radad; a.k.a.
+RADDAD, Riyad); DOB 1960; HAMAS - Tulkarem (individual) [NS-PLC].
+
+RADDAD, Riyad (a.k.a. AL-SEDAWI, Riyad Radad; a.k.a. RADAD, Riyad
+Mahmoud Sa'eed); DOB 1960; HAMAS - Tulkarem (individual) [NS-PLC].
+
+RAJOUB, Naif Mahmod (a.k.a. RJOUB, Nayef); DOB 1958; POB Dura, West
+Bank; HAMAS - Hebron (individual) [NS-PLC].
+
+RAMADAN, Nizar (a.k.a. RAMADAN, Nizar Abd-Al-Aziz); DOB 1960; HAMAS
+- Hebron (individual) [NS-PLC].
+
+RAMADAN, Nizar Abd-Al-Aziz (a.k.a. RAMADAN, Nizar); DOB 1960; HAMAS
+- Hebron (individual) [NS-PLC].
+
+RJOUB, Nayef (a.k.a. RAJOUB, Naif Mahmod); DOB 1958; POB Dura, West
+Bank; HAMAS - Hebron (individual) [NS-PLC].
+
+ROUMANIN, Ali Salim, Oja, West Bank, Palestinian; DOB 1971
+(individual) [NS-PLC].
+
+SA'DAT, Ahmad; PFLP (individual) [NS-PLC].
+
+SALAMEH, Salem (a.k.a. SALAMEH, Salem Ahmad Abdel Hadi); DOB 1951;
+HAMAS - Der al-Balah (individual) [NS-PLC].
+
+SALAMEH, Salem Ahmad Abdel Hadi (a.k.a. SALAMEH, Salem); DOB 1951;
+HAMAS - Der al-Balah (individual) [NS-PLC].
+
+SALEH, Jamal (a.k.a. NASSER, Jamal Talab Mohammad Saleh; a.k.a.
+SALEH, Jamal Talab); DOB 1958; POB Gaza; HAMAS - Gaza (individual)
+[NS-PLC].
+
+SALEH, Jamal Talab (a.k.a. NASSER, Jamal Talab Mohammad Saleh;
+a.k.a. SALEH, Jamal); DOB 1958; POB Gaza; HAMAS - Gaza (individual)
+[NS-PLC].
+
+SALEH, Mariam Mahmoud, Ramallah, West Bank, Palestinian; DOB 1952
+(individual) [NS-PLC].
+
+SALHAB TAMIMI, Azzam No'man Abdel Rahman (a.k.a. SALHAB, Azzam;
+a.k.a. SALHAB, Azzam Numan Rahman); DOB 1956; HAMAS - Hebron
+(individual) [NS-PLC].
+
+SALHAB, Azzam (a.k.a. SALHAB TAMIMI, Azzam No'man Abdel Rahman;
+a.k.a. SALHAB, Azzam Numan Rahman); DOB 1956; HAMAS - Hebron
+(individual) [NS-PLC].
+
+SALHAB, Azzam Numan Rahman (a.k.a. SALHAB TAMIMI, Azzam No'man
+Abdel Rahman; a.k.a. SALHAB, Azzam); DOB 1956; HAMAS - Hebron
+(individual) [NS-PLC].
+
+SEYAM, Said Mohammad (a.k.a. SIAM, Saeed; a.k.a. SIYAM, Saeed
+Mohammad), Gaza, Palestinian; DOB 1959; HAMAS - Gaza (individual)
+[NS-PLC].
+
+SHEHAB, Mohamed Abed Hadi Rahman (a.k.a. SHIHAB, Mohammed); DOB
+1956; HAMAS - Northern Gaza (individual) [NS-PLC].
+
+SHIHAB, Mohammed (a.k.a. SHEHAB, Mohamed Abed Hadi Rahman); DOB
+1956; HAMAS - Northern Gaza (individual) [NS-PLC].
+
+SIAM, Saeed (a.k.a. SEYAM, Said Mohammad; a.k.a. SIYAM, Saeed
+Mohammad), Gaza, Palestinian; DOB 1959; HAMAS - Gaza (individual)
+[NS-PLC].
+
+SIYAM, Saeed Mohammad (a.k.a. SEYAM, Said Mohammad; a.k.a. SIAM,
+Saeed), Gaza, Palestinian; DOB 1959; HAMAS - Gaza (individual) [NS-
+PLC].
+
+TAWTA, Muhamed Umran Salih (a.k.a. TAWTAH, Mohammad Omran Saleh;
+a.k.a. TUTAH, Mohammed Saleh); DOB 1969; HAMAS - Jerusalem
+(individual) [NS-PLC].
+
+TAWTAH, Mohammad Omran Saleh (a.k.a. TAWTA, Muhamed Umran Salih;
+a.k.a. TUTAH, Mohammed Saleh); DOB 1969; HAMAS - Jerusalem
+(individual) [NS-PLC].
+
+THOUAIB, Khaled Ibrahim Tafish (a.k.a. DWEIB, Khaled Tafesh; a.k.a.
+THWEIB, Khaled Tafish); DOB 1964; POB Bethlehem; HAMAS - Bethlehem
+(individual) [NS-PLC].
+
+THWEIB, Khaled Tafish (a.k.a. DWEIB, Khaled Tafesh; a.k.a. THOUAIB,
+Khaled Ibrahim Tafish); DOB 1964; POB Bethlehem; HAMAS - Bethlehem
+(individual) [NS-PLC].
+
+TUTAH, Mohammed Saleh (a.k.a. TAWTA, Muhamed Umran Salih; a.k.a.
+TAWTAH, Mohammad Omran Saleh); DOB 1969; HAMAS - Jerusalem
+(individual) [NS-PLC].
+
+UDWAN, Atef (a.k.a. ADWAN, Atef Ibrahim; a.k.a. IDWAN, Atef Ibrahim
+Mohammad); DOB 1952; HAMAS - Northern Gaza (individual) [NS-PLC].
+
+YAHIA, Khaled Abed (a.k.a. YEHIA, Khaled Said), Jenin, West Bank,
+Palestinian; DOB 1959; HAMAS - Jenin (individual) [NS-PLC].
+
+YASIN, Husni Bourini (a.k.a. YASIN, Husni Mohammad Bourini); DOB
+1955; HAMAS - Nablus (individual) [NS-PLC].
+
+YASIN, Husni Mohammad Bourini (a.k.a. YASIN, Husni Bourini); DOB
+1955; HAMAS - Nablus (individual) [NS-PLC].
+
+YEHIA, Khaled Said (a.k.a. YAHIA, Khaled Abed), Jenin, West Bank,
+Palestinian; DOB 1959; HAMAS - Jenin (individual) [NS-PLC].
+
+YOUSEF, Hasan (a.k.a. DAR KHALIL, Hasan Youssef Daoud; a.k.a. DAR
+KHALIL, Hassan Yousef Dawoud); HAMAS - Ramallah (individual) [NS-
+PLC].
+
+ZAAREER, Basim Ahmad (a.k.a. ZA'ARIR, Basem); DOB 1962; HAMAS -
+Hebron (individual) [NS-PLC].
+
+ZA'ARIR, Basem (a.k.a. ZAAREER, Basim Ahmad); DOB 1962; HAMAS -
+Hebron (individual) [NS-PLC].
+
+ZAHHAR, Mahmoud Khaled (a.k.a. AL ZAHAR, Mahmoud Khaled); DOB 1945
+(individual) [NS-PLC].
+
+ZBOUN, Anwar Mohammed (a.k.a. AL-ZBOUN, Anwar Muhammad), Bethlehem,
+West Bank, Palestinian; DOB 1968; POB Ilar (individual) [NS-PLC].
+
+ZEIDAN, Abdel Rahman Fahmi Rahman (a.k.a. ZEIDAN, Abdul Rahman
+Fahmi); DOB 1960; HAMAS - Tulkarem (individual) [NS-PLC].
+
+ZEIDAN, Abdul Rahman Fahmi (a.k.a. ZEIDAN, Abdel Rahman Fahmi
+Rahman); DOB 1960; HAMAS - Tulkarem (individual) [NS-PLC].
+
+_________________________________
+
+For further information on the "Non-SDN Palestinian Legislative
+Council List," contact the:
+
+OFFICE OF FOREIGN ASSETS CONTROL
+U.S. DEPARTMENT OF THE TREASURY
+1500 PENNSYLVANIA AVENUE, N.W.
+WASHINGTON, D.C. 20220
+http://www.treasury.gov/ofac
+
+_________________________________
+
+9/16/2016
