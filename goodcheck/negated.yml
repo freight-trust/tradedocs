@@ -1,0 +1,7 @@
+rules:
+  - id: negated
+    not:
+      pattern:
+        <!DOCTYPE html>
+    message: Write a doctype on HTML files.
+    glob: "**/*.html"

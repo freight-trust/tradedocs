@@ -1,0 +1,5 @@
+rules:
+  - id: without_pattern
+    message: |
+      Read the Omnibus Documentation: https://ft-docs.netlify.app
+    glob: docs/README.md
